@@ -196,19 +196,34 @@ body {
   right: 2rem;
 }
 /* index map*/
-.map-container{
+.map-wrapper{
   display: flex;
   align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.map-container{
+  flex: 1;
+  /*display: flex;
+  align-items: center;
   gap: 20px; /* Adjust spacing between map and text */
-  max-width: 600px; /* Set a max width */
+  /*max-width: 600px; *//* Set a max width */
 }
 
 .map-frame {
-  width: 300px;  /* Adjust the width */
-  height: 200px; /* Adjust the height */
-  border-radius: 10px; /* Optional: rounded corners */
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  /*width: 300px;*/  /* Adjust the width */
+  /*height: 200px; /* Adjust the height */
+  /*border-radius: 10px; /* Optional: rounded corners */
   border: 0;
 }
+.location-details{
+  flex: 1;
+  font-size: 16px;
 
 /* Footer */
 .footer {
