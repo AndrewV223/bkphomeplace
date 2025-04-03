@@ -204,10 +204,11 @@ body {
   margin: auto;
 }
 .map-container{
-  flex: 1;
-  min-width:300px;
-  /*display: flex;
-  align-items: center;
+  /*flex: 1;
+  min-width:300px;*/
+  display: flex;
+  flex-direction: row;
+  align-items: start;
   gap: 20px; /* Adjust spacing between map and text */
   /*max-width: 600px; *//* Set a max width */
 }
