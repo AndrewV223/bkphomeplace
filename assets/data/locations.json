@@ -1,0 +1,139 @@
+{
+    "locations": [
+      {
+        "id": 1,
+        "name": "Mega Bangna",
+        "category": "shopping",
+        "distance": "4.9 km",
+        "travel_time": {
+          "car": "10 mins",
+          "bike": "16 mins",
+          "walk": "47 mins"
+        },
+        "image":"assets/img/shopping/mega-bangna-1.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/The+Glass+Market+Bangna,+645+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+13+Bang+Na-Trat+Frontage+Rd,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/@13.6567185,100.6488331,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5f00662e4511:0xe41483a883777aec!2m2!1d100.6739778!2d13.6531869!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website": "https://www.mega-bangna.com/",
+        "description": "Large shopping complex with international brands and entertainment."
+      },
+      {
+        "id": 2,
+        "name": "IKEA Bangna",
+        "category": "shopping",
+        "distance": "4.9 km",
+        "travel_time": {
+          "car": "10 mins",
+          "bike": "15 mins",
+          "walk": "48 mins"
+        },
+        "image": "assets/img/shopping/ikea-2.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/The+Glass+Market+Bangna,+645+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+13+Bang+Na-Trat+Frontage+Rd,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/@13.6567185,100.6488331,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5f00662e4511:0xe41483a883777aec!2m2!1d100.6739778!2d13.6531869!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.ikea.com/th/en/stores/bangna/",
+        "description": "Furniture store with restaurant and Swedish designs."
+      },
+      {
+        "id": 3,
+        "name": "The Glass Market",
+        "category": "dining",
+        "distance": "4.8 km",
+        "travel_time": {
+          "car": "8 mins",
+          "bike": "13 mins",
+          "walk": "26 mins"
+        },
+        "image": "assets/img/dining/theglass-4.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/The+Glass+Market+Bangna,+645+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+13+Bang+Na-Trat+Frontage+Rd,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/@13.6567185,100.6488331,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5f00662e4511:0xe41483a883777aec!2m2!1d100.6739778!2d13.6531869!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://theglassbangna.com/",
+        "description": "Night market with local street food and products."
+      },
+      {
+        "id": 4,
+        "name": "Parc Bangna",
+        "category": "dining",
+        "distance": "5.0 km",
+        "travel_time": {
+          "car": "16 mins",
+          "bike": "10 mins",
+          "walk": "41 mins"
+        },
+        "image": "assets/img/dining/parc-bangna-7.jpg",
+        "map": "https://www.google.co.th/maps/place/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%AA+%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95+%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2/@13.6531921,100.6714029,17z/data=!3m1!4b1!4m6!3m5!1s0x311d5f00662e4511:0xe41483a883777aec!8m2!3d13.6531869!4d100.6739778!16s%2Fg%2F11y59z8qgd?hl=th&entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.instagram.com/parcbangna/?hl=en",
+        "description": "A place to chill outdoors with friends and dine."
+      },
+      {
+        "id": 5,
+        "name": "Princ Hospital Survarnabhumi",
+        "category": "health",
+        "distance": "5.8 km",
+        "travel_time":{
+          "car": "10 mins",
+          "bike": "5 mins",
+          "walk": "15 mins"
+        },
+        "image":"assets/img/health/princ.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Princ+Hospital+Suvarnabhumi,+35%2F2+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+Bang+Na-Trat+Frontage+Rd,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/@13.6567185,100.6488331,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5f0a5873514b:0x6ddf19c97c0e9e44!2m2!1d100.6663095!2d13.6570523!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.princsuvarnabhumi.com",
+        "description": "A modern hospital offering a wide range of medical services."
+      },
+      {
+        "id": 6,
+        "name": "Central Bangna",
+        "category": "shopping",
+        "distance": "5.7 km",
+        "travel_time": {
+          "car": "15 mins",
+          "bike": "30 mins",
+          "walk": "60 mins"
+        },
+        "image": "assets/img/shopping/central-bangna-5.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Central+Bangna,+587,+589+Bang+Na-Trat+Frontage+Rd,+Bang+Na+Nuea,+Bang+Na,+Bangkok+10260/@13.6677441,100.6225588,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5fe57d8c5b4f:0xe3edda3d25621172!2m2!1d100.6340123!2d13.6686802!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.central.co.th/en/store/central-bangna",
+        "description": "A large shopping mall with a variety of stores and restaurants."
+      },
+      {
+        "id": 7,
+        "name": "Seacon Square",
+        "category": "shopping",
+        "distance": "6.6 km",
+        "travel_time": {
+          "car": "16 mins",
+          "bike": "50 mins",
+          "walk": "93 mins"
+        },
+        "image": "assets/img/shopping/seacon-square-6.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Seacon+Square+Srinagarindra,+55+Srinagarindra+Rd,+Nong+Bon,+Prawet,+Bangkok+10250/@13.6760747,100.6316962,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5fd3fd8e82df:0xecc3d0841afbf60c!2m2!1d100.6483001!2d13.6943348!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.seaconsquare.com",
+        "description": "A large shopping mall with a variety of stores and restaurants."
+      },
+      {
+        "id": 8,
+        "name": "Raffles American School Bangkok",
+        "category": "school",
+        "distance": "6.6 km",
+        "travel_time": {
+          "car": "19 mins",
+          "bike": "8 mins",
+          "walk": "20 mins"
+        },
+        "image": "assets/img/school/raffles.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Raffles+American+School:+RAS,+15%2F4+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+15+Bang+Na-Trat+Frontage+Rd,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/@13.6677127,100.6029508,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5fcbdf639517:0xd0013a9383a7d627!2m2!1d100.6590705!2d13.664716!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.ras.ac.th/",
+        "description": "Raffles American School."
+      },
+      {
+        "id": 9,
+        "name": "Dusit Thani College",
+        "category": "school",
+        "distance": "9.1 km",
+        "travel_time": {
+          "car": "19 mins",
+          "bike": "50 mins",
+          "walk": "97 mins"
+        },
+        "image": "assets/img/school/dusit-college-1.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Dusit+Thani+College,+1+Srinagarindra+49+Alley,+Nong+Bon,+Prawet,+Bangkok+10250/@13.6822825,100.6316962,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d606e68c3fc59:0xc0d7b24c733ac2fd!2m2!1d100.6486561!2d13.6975595!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://dtc.ac.th/en/home/",
+        "description": "Dusit Thani College Hospitality and Culinary."
+      }
+    ]
+  }

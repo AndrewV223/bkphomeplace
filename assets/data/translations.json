@@ -1,0 +1,72 @@
+{
+    "en": {
+        "index": {
+            "Trans_title": "Living in Bangna",
+            "Trans_desc": "Furnished apartments in prime location",
+            "Trans_explore": "Explore Bangna",
+            "Trans_features": "Smart Features",
+            "Trans_apartments": "Our Apartments",
+            "Trans_view": "View Details",
+            "Trans_contact": "Contact"
+        },
+        "studio": {
+            "Trans_Home": "Home",
+            "Trans_Corner" : "Corner",
+            "Trans_onebedroom": "1 Bedroom",
+            "Trans_title": "Studio Apartment",
+            "Trans_desc": "6+ months contract",
+            "Trans_price": "Starting at 4,800.-/month"
+        },
+        "corner": {
+            "Trans_Home": "Home",
+            "Trans_Studio": "Studio",
+            "Trans_onebedroom": "1 Bedroom",
+            "Trans_title": "Corner Apartment",
+            "Trans_desc": "6+ months contract",
+            "Trans_price": "Starting at 4,900.-/month"
+        },
+        "onebedroom": {
+            "Trans_Home": "Home",
+            "Trans_Studio": "Studio",
+            "Trans_Corner" : "Corner",
+            "Trans_title": "One-Bedroom Apartment",
+            "Trans_desc": "6+ months contract",
+            "Trans_price": "Starting at 10,000.-/month"
+        }
+    },
+    "th": {
+        "index": {
+            "Trans_title": "ใช้ชีวิตในบางนา",
+            "Trans_desc": "อพาร์ตเมนต์ตกแต่งครบพร้อมทำเลที่ยอดเยี่ยม",
+            "Trans_explore": "สำรวจบางนา",
+            "Trans_features": "คุณสมบัติอัจฉริยะ",
+            "Trans_apartments": "อพาร์ตเมนต์ของเรา",
+            "Trans_view": "ดูรายละเอียด",
+            "Trans_contact": "ติดต่อเรา"
+        },
+        "studio": {
+            "Trans_Home":"หน้าแรก",
+            "Trans_Corner" : "ห้องมุม",
+            "Trans_onebedroom": "1 ห้องนอน",
+            "Trans_title": "อพาร์ตเมนต์สตูดิโอ",
+            "Trans_desc": "สัญญา 6 เดือนขึ้นไป",
+            "Trans_price": "เริ่มต้นที่ 4,800 บาท/เดือน"
+        },
+        "corner": {
+            "Trans_Home":"หน้าแรก",
+            "Trans_Studio": "สตูดิโอ",
+            "Trans_onebedroom": "1 ห้องนอน",
+            "Trans_title": "อพาร์ตเมนต์มุม",
+            "Trans_desc": "สัญญา 6 เดือนขึ้นไป",
+            "Trans_price": "เริ่มต้นที่ 4,900 บาท/เดือน"
+        },
+        "onebedroom": {
+            "Trans_Home":"หน้าแรก",
+            "Trans_Studio": "สตูดิโอ",
+            "Trans_Corner" : "ห้องมุม",
+            "Trans_title": "อพาร์ตเมนต์หนึ่งห้องนอน",
+            "Trans_desc": "สัญญา 6 เดือนขึ้นไป",
+            "Trans_price": "เริ่มต้นที่ 10,000 บาท/เดือน"
+        }
+    }
+}
