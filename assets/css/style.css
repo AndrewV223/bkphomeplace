@@ -210,17 +210,16 @@ body {
   flex-direction: row;
   align-items: start;
   gap: 20px; /* Adjust spacing between map and text */
-  /*max-width: 600px; *//* Set a max width */
+  max-width: 600px; /* Set a max width */
 }
 
 .map-frame {
   width: 100%;
   max-width: 400px;
   height: 300px;
+  /*width: 300px;   */
+  /*height: 200px; */
   border-radius: 10px;
-  /*width: 300px;*/  /* Adjust the width */
-  /*height: 200px; /* Adjust the height */
-  /*border-radius: 10px; /* Optional: rounded corners */
   border: 0;
 }
 .location-details{
@@ -273,7 +272,7 @@ body {
   }
 }
   /*prevent location details from self-wrapped*/
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .map-container{
     flex-direction: column;
     align-items: center;
@@ -282,7 +281,7 @@ body {
     width: 100%;
     min-width: unset;
   }
-}
+}*/
 /* Utilities */
 .bg-accent {
   background-color: var(--accent-color) !important;
