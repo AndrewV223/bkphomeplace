@@ -205,6 +205,7 @@ body {
 }
 .map-container{
   flex: 1;
+  min-width:300px;
   /*display: flex;
   align-items: center;
   gap: 20px; /* Adjust spacing between map and text */
