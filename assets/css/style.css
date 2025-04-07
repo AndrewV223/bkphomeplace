@@ -198,16 +198,14 @@ body {
 /* index map*/
 .map-wrapper{
   display: flex;
-  align-items: center;
+ /* align-items: center;*/
   gap: 20px;
   max-width: 900px;
   margin: auto;
 }
 .map-container{
   flex: 1;
-  min-width:300px;
-  display: flex;
-  flex-direction: column;/*
+  min-width:300px;/*
   display: flex;
   flex-direction: row;
   align-items: start;
