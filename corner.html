@@ -201,19 +201,21 @@ document.addEventListener('DOMContentLoaded', () => {
         src: link.href,
         w: parseInt(link.dataset.pswpWidth, 10),
         h: parseInt(link.dataset.pswpHeight, 10),
-        msrc: link.querySelector('img').src // Optional thumbnail path
-    }));
+        msrc: link.querySelector('img').getAttribute('data-src')}));
 
-    // Add click handlers
+    // Click handlers
     galleryLinks.forEach((link, index) => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
             const options = {
                 index: index,
-                bgOpacity: 0.85,
+                bgOpacity: 0.9,
+                closeOnClick: true,
+                pinchToClose: true,
                 showHideOpacity: true,
-                closeOnVerticalDrag: false,
+                clickToCloseNonZoomable: true,
+                closeOnVerticalDrag: true,
                 getThumbBoundsFn: (index) => {
                     const thumbnail = link.querySelector('img');
                     const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -229,19 +231,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 options
             );
             
-            // Add essential event listeners
-            gallery.listen('beforeChange', () => {
-                document.documentElement.classList.add('pswp-open');
-            });
-            
+            // handle image closing properly
             gallery.listen('close', () => {
-                document.documentElement.classList.remove('pswp-open');
+                document.documentElement.style.overflow = 'auto';
             });
             
             gallery.init();
+                document.documentElement.style.overflow = 'hidden';
+            });     
         });
     });
-});
 </script>
 </body>
 </html>
