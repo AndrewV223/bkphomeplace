@@ -147,11 +147,20 @@ body {
   height: 200px;
   object-fit: cover;
 }
-.gallery-grid a{
+.pswp__img {
+  pointer-events: none !important;
+}
+.pswp__button--arrow {
+  visibility: visible !important;
+}
+.gallery-grid a {
   display: block;
   position: relative;
   cursor: zoom-in;
-
+}
+.pswp__scroll-wrap {
+  -webkit-overflow-scrolling: touch;
+}
 /* Lightbox */
 .lightbox {
   position: fixed;
