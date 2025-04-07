@@ -282,13 +282,13 @@ body {
   .map-wrapper {
     flex-direction: column;
     align-items: stretch;
-    flex-wrap: wrap; /* this is optional if column works fine */
+    flex-wrap: wrap; 
   }
 
   .map-container,
   .location-details {
     width: 100%;
-    min-width: 0; /* override the fixed min-width */
+    min-width: 0; 
   }
 }
 /* Utilities */
