@@ -10,6 +10,7 @@
 
   gtag('config', 'G-Y2VWHYSRDY');
 </script>
+    <link rel="stylesheet" href="https://unpkg.com/zooming@1.0.0/dist/zooming.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Apartment - BKP Homeplace</title>
@@ -18,6 +19,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -77,13 +80,19 @@
                 <div class="gallery-grid">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <img data-src="assets/img/rooms/studio-1.jpg" srcset="assets/img/rooms/studio-1.jpg 600w" class="img-fluid rounded" alt="Main room" loading="lazy">
+                            <a href="assets/img/rooms/studio-1.jpg" data-lightbox="studio" data-title="Main room"> 
+                            <img data-src="assets/img/rooms/studio-1.jpg" srcset="assets/img/rooms/studio-1.jpg 600w" class="zoomable img-fluid rounded" alt="Main room" loading="lazy">
+                            </a>
                         </div>
                         <div class="col-md-6">
-                            <img data-src="assets/img/rooms/studio-2.jpg" srcset="assets/img/rooms/studio-2.jpg 600w" class="img-fluid rounded" alt="Bathroom" loading="lazy">
+                            <a href="assets/img/rooms/studio-2.jpg" data-lightbox="studio" data-title="Bathroom">
+                            <img data-src="assets/img/rooms/studio-2.jpg" srcset="assets/img/rooms/studio-2.jpg 600w" class="zoomable img-fluid rounded" alt="Bathroom" loading="lazy">
+                            </a>
                         </div>
                         <div class="col-md-12">
-                            <img data-src="assets/img/rooms/studio-3.jpg" srcset="assets/img/rooms/studio-3.jpg 600w" class="img-fluid rounded" alt="Balcony view" loading="lazy">
+                            <a href="assets/img/rooms/studio-3.jpg" data-lightbox="studio" data-title="Balcony view"
+                            <img data-src="assets/img/rooms/studio-3.jpg" srcset="assets/img/rooms/studio-3.jpg 600w" class="zoomable img-fluid rounded" alt="Balcony view" loading="lazy">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -159,5 +168,15 @@
     gtag('js', new Date());
     gtag('config', 'G-YOUR_GA4_ID');
 </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/zooming@1.0.0/dist/zooming.min.js"></script>
+    <script>
+    const zoom = new Zooming({
+        customSize: 400,  // to adjust zoom size
+        scrollThreshold: 0.1,  // speed of zoom scroll
+    });
+    zoom.listen('.zoomable');  // listen to all class="zoomable.. 
+</script>
+
 </body>
 </html>
