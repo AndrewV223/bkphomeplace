@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         }
         // Language Select
-       // Language Translation Code (Direct Execution)
+       // Language Translation Code (Doesn't seems to work)
 const languageSelect = document.getElementById("languageSelect");
 let translations = {};
 
@@ -239,4 +239,66 @@ languageSelect.addEventListener("change", function () {
     changeLanguage(this.value);
 });
 });
+console.log("JavaScript is running");
+
+// PhotoSwipe Gallery Initialization
+const galleryElements = document.querySelectorAll('.gallery-grid a');
+const pswpElement = document.querySelector('.pswp'); 
+const items = [];
+
+// Prepare the items for PhotoSwipe
+galleryElements.forEach(element => {
+    const size = element.getAttribute('data-pswp-width') + 'x' + element.getAttribute('data-pswp-height');
+    const item = {
+        src: element.getAttribute('href'),
+        w: parseInt(element.getAttribute('data-pswp-width'), 10),
+        h: parseInt(element.getAttribute('data-pswp-height'), 10)
+    };
+    items.push(item);
+});
+
+const options = {
+    index: 0, 
+    closeOnScroll: false, 
+    history: false, 
+    showHideOpacity: true,
+};
+
+// Full-screen PhotoSwipe gallery
+galleryElements.forEach((element, index) => {
+    element.addEventListener('click', event => {
+        event.preventDefault();
+        options.index = index;
+        const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    });
+});
+
+// Smooth scrolling to contact us
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+document.querySelector('#someButton').addEventListener('click', () => {
+    alert("This is some button functionality");
+});
+
+
+document.querySelector('#anotherButton').addEventListener('click', () => {
+    console.log('Another button clicked!');
+});
+
+
+document.querySelector('#someForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('Form submitted!');
+});
+
 
