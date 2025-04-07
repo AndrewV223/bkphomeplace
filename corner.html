@@ -198,37 +198,36 @@
                 
    <script>
     const galleryElements = document.querySelectorAll('.gallery-grid a');
-    const pswpElement = document.querySelectorAll('.pswp')[0]; // The container for the full-screen gallery
-
+    const pswpElement = document.querySelector('.pswp'); 
     const items = [];
 
     // Prepare the items for PhotoSwipe
     galleryElements.forEach(element => {
-        const size = element.getAttribute('data-size').split('x');
+        const size = element.getAttribute('data-pswp-width') + 'x' + element.getAttribute('data-pswp-height');
         const item = {
             src: element.getAttribute('href'),
-            w: parseInt(size[0], 10),
-            h: parseInt(size[1], 10)
+            w: parseInt(element.getAttribute('data-pswp-width'), 10),
+            h: parseInt(element.getAttribute('data-pswp-height'), 10)
         };
         items.push(item);
     });
 
     const options = {
-        index: 0, // Start at the first image
-        closeOnScroll: false, // Prevent closing when scrolling
-        history: false // Don't change the URL on image changes
+        index: 0, 
+        closeOnScroll: false, 
+        history: false, 
+        showHideOpacity: true,
     };
 
-    // When clicking on an image, open it in the full-screen PhotoSwipe gallery
+    // full-screen PhotoSwipe gallery
     galleryElements.forEach((element, index) => {
         element.addEventListener('click', event => {
             event.preventDefault();
-            options.index = index; // Set the current image as the index
+            options.index = index;
             const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
             gallery.init();
         });
     });
 </script>
-
 </body>
 </html>
