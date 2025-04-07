@@ -52,6 +52,8 @@
                     <span class="badge bg-primary">4,900 THB/month</span>
                     <span class="text-muted">สัญญา 6 เดือนขึ้นไป<br>6+ month contract</span>
                 </div>
+            </div>
+        </div>
 
                 <div class="features-card mb-5">
                     <h3><i class="fas fa-list-check me-2"></i>ห้องมาพร้อมกับ | Included Features</h3>
@@ -103,26 +105,24 @@
 
                 <h3 class="mb-4">Apartment Views</h3>
                 <div class="gallery-grid">
-                    <div class="row g-3">
+                    <div class="row g-3" itemscope itemtype="http://schema.org/ImageGallery">
                         <div class="col-md-6">
-                            <a href="assets/img/rooms/corner-1.jpg" data-pswp-width="1200" data-pswp-height="800">
-                            <img data-src="assets/img/rooms/corner-1.jpg" srcset="assets/img/rooms/corner-1.jpg 600w" class="img-fluid rounded" alt="Main room" loading="lazy">
+                            <a href="assets/img/rooms/corner-1.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true">
+                            <img data-src="assets/img/rooms/corner-1.jpg" srcset="assets/img/rooms/corner-1.jpg 600w" class="img-fluid rounded" alt="Main room" loading="lazy" itemprop="thumbnail">
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <a href="assets/img/rooms/corner-2.jpg" data-pswp-width="1200" data-pswp-height="800">
-                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="img-fluid rounded" alt="Closet" loading="lazy">
+                        <div class="col-md-6" itemscope itemtype="http://schema.org/ImageGallery">
+                            <a href="assets/img/rooms/corner-2.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true">
+                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="img-fluid rounded" alt="Closet" loading="lazy" item-prop="thumbnail"'>
                             </a>
                         </div>
-                        <div class="col-md-12">
-                            <a href="assets/img/rooms/corner-3.jpg" data-pswp-width="1200" data-pswp-height="800">
-                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="img-fluid rounded" alt="Corner windows" loading="lazy">
+                        <div class="col-md-12" itemscope itemtype="http://schema.org/ImageGallery">
+                            <a href="assets/img/rooms/corner-3.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true">
+                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="img-fluid rounded" alt="Corner windows" loading="lazy" item-prop="thumbnail">
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-
             <div class="col-lg-4">
                 <div class="sidebar-card">
                     <div class="card mb-4">
@@ -156,8 +156,6 @@
         </div>
     </div>
 </main>
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
             <footer class="bg-dark text-light py-4" id="contact">
                 <div class="container">
                     <div class="row">
@@ -177,7 +175,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </footer>
 
     <!-- Scripts -->
@@ -193,31 +190,54 @@
     gtag('config', 'G-YOUR_GA4_ID');
 </script>
 <script>
+<script>
 document.addEventListener('DOMContentLoaded', () => {
-    // PhotoSwipe Initialization
-    const galleryElements = document.querySelectorAll('.gallery-grid a');
+    // Initialize PhotoSwipe
     const pswpElement = document.querySelector('.pswp');
-    const items = [];
+    const galleryLinks = document.querySelectorAll('.gallery-grid a[itemprop="contentUrl"]');
+    
+    // Prepare gallery items
+    const items = Array.from(galleryLinks).map(link => ({
+        src: link.href,
+        w: parseInt(link.dataset.pswpWidth, 10),
+        h: parseInt(link.dataset.pswpHeight, 10),
+        msrc: link.querySelector('img').src // Optional thumbnail path
+    }));
 
-    galleryElements.forEach(element => {
-        items.push({
-            src: element.getAttribute('href'),
-            w: parseInt(element.dataset.pswpWidth, 10),
-            h: parseInt(element.dataset.pswpHeight, 10)
-        });
-    });
-
-    galleryElements.forEach((element, index) => {
-        element.addEventListener('click', (e) => {
+    // Add click handlers
+    galleryLinks.forEach((link, index) => {
+        link.addEventListener('click', function(e) {
             e.preventDefault();
+            
             const options = {
                 index: index,
-                bgOpacity: 0.8,
-                closeOnScroll: false,
-                arrowPrev: true,
-                arrowNext: true
+                bgOpacity: 0.85,
+                showHideOpacity: true,
+                closeOnVerticalDrag: false,
+                getThumbBoundsFn: (index) => {
+                    const thumbnail = link.querySelector('img');
+                    const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
+                    const rect = thumbnail.getBoundingClientRect();
+                    return {x: rect.left, y: rect.top + pageYScroll, w: rect.width};
+                }
             };
-            const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+            const gallery = new PhotoSwipe(
+                pswpElement,
+                PhotoSwipeUI_Default,
+                items,
+                options
+            );
+            
+            // Add essential event listeners
+            gallery.listen('beforeChange', () => {
+                document.documentElement.classList.add('pswp-open');
+            });
+            
+            gallery.listen('close', () => {
+                document.documentElement.classList.remove('pswp-open');
+            });
+            
             gallery.init();
         });
     });
