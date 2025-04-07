@@ -205,7 +205,7 @@ body {
 }
 .map-container{
   flex: 1;
-  min-width:300px;/*
+  /*min-width:300px;/*
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -225,8 +225,8 @@ body {
 .location-details{
   flex: 1;
   font-size: 16px;
-  min-width: 300px;
-  flex-direction: column;
+  /*min-width: 300px;*/
+  /*flex-direction: column;*/
 
 /* Footer */
 .footer {
@@ -278,14 +278,17 @@ body {
     flex-direction: column;
     align-items: center;
   }*/
-  @media (max-width: 768px){
-    .map-wrapper{
-      flex-direction: column;
-      align-items: stretch;
-    }
-  .map-frame, .location-details{
+@media (max-width: 768px) {
+  .map-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap; /* this is optional if column works fine */
+  }
+
+  .map-container,
+  .location-details {
     width: 100%;
-    min-width: unset;
+    min-width: 0; /* override the fixed min-width */
   }
 }
 /* Utilities */
