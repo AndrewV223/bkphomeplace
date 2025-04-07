@@ -277,12 +277,17 @@ body {
   .map-container{
     flex-direction: column;
     align-items: center;
-  }
+  }*/
+  @media (max-width: 768px){
+    .map-wrapper{
+      flex-direction: column;
+      align-items: stretch;
+    }
   .map-frame, .location-details{
     width: 100%;
     min-width: unset;
   }
-}*/
+}
 /* Utilities */
 .bg-accent {
   background-color: var(--accent-color) !important;
