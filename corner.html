@@ -195,39 +195,5 @@
     gtag('js', new Date());
     gtag('config', 'G-YOUR_GA4_ID');
 </script>
-   
-   <script>
-    const galleryElements = document.querySelectorAll('.gallery-grid a');
-    const pswpElement = document.querySelector('.pswp'); 
-    const items = [];
-
-    // Prepare the items for PhotoSwipe
-    galleryElements.forEach(element => {
-        const size = element.getAttribute('data-pswp-width') + 'x' + element.getAttribute('data-pswp-height');
-        const item = {
-            src: element.getAttribute('href'),
-            w: parseInt(element.getAttribute('data-pswp-width'), 10),
-            h: parseInt(element.getAttribute('data-pswp-height'), 10)
-        };
-        items.push(item);
-    });
-
-    const options = {
-        index: 0, 
-        closeOnScroll: false, 
-        history: false, 
-        showHideOpacity: true,
-    };
-
-    // full-screen PhotoSwipe gallery
-    galleryElements.forEach((element, index) => {
-        element.addEventListener('click', event => {
-            event.preventDefault();
-            options.index = index;
-            const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-            gallery.init();
-        });
-    });
-</script>
 </body>
 </html>
