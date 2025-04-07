@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Lightbox Functionality
-  const lightbox = document.getElementById('lightbox');
+ /* const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const images = Array.from(document.querySelectorAll('.gallery-img img'));
   let currentIndex = 0;
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === lightbox) {
         lightbox.classList.remove('active');
       }
-    });
+    });*/
 
     // Keyboard Navigation
     document.addEventListener('keydown', (e) => {
