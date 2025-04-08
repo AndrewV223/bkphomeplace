@@ -80,18 +80,18 @@
                 <div class="gallery-grid">
                     <div class="row g-3" itemscope itemtype="http://schema.org/ImageGallery">
                         <div class="col-md-6">
-                            <a href="assets/img/rooms/corner-1.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="blank">
+                            <a href="assets/img/rooms/corner-1.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="_blank">
                             <img data-src="assets/img/rooms/corner-1.jpg" srcset="assets/img/rooms/corner-1.jpg 600w" class="img-fluid rounded" alt="Main room" loading="lazy" itemprop="thumbnail">
                             </a>
                         </div>
                         <div class="col-md-6" itemscope itemtype="http://schema.org/ImageGallery">
-                            <a href="assets/img/rooms/corner-2.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="blank">
-                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="img-fluid rounded" alt="Closet" loading="lazy" item-prop="thumbnail"'>
+                            <a href="assets/img/rooms/corner-2.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="_blank">
+                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="img-fluid rounded" alt="Closet" loading="lazy" itemprop="thumbnail"'>
                             </a>
                         </div>
                         <div class="col-md-12" itemscope itemtype="http://schema.org/ImageGallery">
-                            <a href="assets/img/rooms/corner-3.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="blank">
-                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="img-fluid rounded" alt="Corner windows" loading="lazy" item-prop="thumbnail">
+                            <a href="assets/img/rooms/corner-3.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="_blank">
+                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="img-fluid rounded" alt="Corner windows" loading="lazy" itemprop="thumbnail">
                             </a>
                         </div>
                     </div>
@@ -182,6 +182,22 @@
     <script src="https://unpkg.com/photoswipe@5.2.3/dist/photoswipe-ui-default.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA4_ID"></script>
+    <script type="module">
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery',
+    children: 'a',
+    pswpModule: () => import('https://unpkg.com/photoswipe'),
+    showAnimationDuration: 300,
+    hideAnimationDuration: 300,
+    zoom: true,
+    clickToCloseNonZoomable: true,
+    bgOpacity: 0.9,
+  });
+
+  lightbox.init();
+</script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -240,22 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });     
         });
     });
-</script>
-    <script type="module">
-  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: '.gallery',
-    children: 'a',
-    pswpModule: () => import('https://unpkg.com/photoswipe'),
-    showAnimationDuration: 300,
-    hideAnimationDuration: 300,
-    zoom: true,
-    clickToCloseNonZoomable: true,
-    bgOpacity: 0.9,
-  });
-
-  lightbox.init();
 </script>
 </body>
 </html>
