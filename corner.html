@@ -75,7 +75,28 @@
                         </div>
                     </div>
                 </div>
-                            <!-- PhotoSwipe Modal -->
+                          
+                <h3 class="mb-4">Apartment Views</h3>
+                <div class="gallery-grid">
+                    <div class="row g-3" itemscope itemtype="http://schema.org/ImageGallery">
+                        <div class="col-md-6">
+                            <a href="assets/img/rooms/corner-1.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="blank">
+                            <img data-src="assets/img/rooms/corner-1.jpg" srcset="assets/img/rooms/corner-1.jpg 600w" class="img-fluid rounded" alt="Main room" loading="lazy" itemprop="thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-6" itemscope itemtype="http://schema.org/ImageGallery">
+                            <a href="assets/img/rooms/corner-2.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="blank">
+                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="img-fluid rounded" alt="Closet" loading="lazy" item-prop="thumbnail"'>
+                            </a>
+                        </div>
+                        <div class="col-md-12" itemscope itemtype="http://schema.org/ImageGallery">
+                            <a href="assets/img/rooms/corner-3.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="blank">
+                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="img-fluid rounded" alt="Corner windows" loading="lazy" item-prop="thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                  <!-- PhotoSwipe Modal -->
                 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="pswp__bg"></div>
                         <div class="pswp__scroll-wrap">
@@ -102,27 +123,6 @@
             </div>
         </div>
     </div>
-
-                <h3 class="mb-4">Apartment Views</h3>
-                <div class="gallery-grid">
-                    <div class="row g-3" itemscope itemtype="http://schema.org/ImageGallery">
-                        <div class="col-md-6">
-                            <a href="assets/img/rooms/corner-1.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true">
-                            <img data-src="assets/img/rooms/corner-1.jpg" srcset="assets/img/rooms/corner-1.jpg 600w" class="img-fluid rounded" alt="Main room" loading="lazy" itemprop="thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-md-6" itemscope itemtype="http://schema.org/ImageGallery">
-                            <a href="assets/img/rooms/corner-2.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true">
-                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="img-fluid rounded" alt="Closet" loading="lazy" item-prop="thumbnail"'>
-                            </a>
-                        </div>
-                        <div class="col-md-12" itemscope itemtype="http://schema.org/ImageGallery">
-                            <a href="assets/img/rooms/corner-3.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true">
-                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="img-fluid rounded" alt="Corner windows" loading="lazy" item-prop="thumbnail">
-                            </a>
-                        </div>
-                    </div>
-                </div>
             <div class="col-lg-4">
                 <div class="sidebar-card">
                     <div class="card mb-4">
@@ -131,8 +131,7 @@
                             <img data-src="assets/img/rooms/corner-1.jpg" class="card-img mb-3" alt="Studio promotion">
                             <p class="text-muted"></p>
                             <a href="#contact" class="btn btn-primary w-100">
-                                <i class="fa-brands fa-line"></i>ติดต่อเรา | Contact us</a>
-                            
+                                <i class="fa-brands fa-line"></i>ติดต่อเรา | Contact us</a> 
                         </div>
                     </div>
 
@@ -241,6 +240,22 @@ document.addEventListener('DOMContentLoaded', () => {
             });     
         });
     });
+</script>
+    <script type="module">
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery',
+    children: 'a',
+    pswpModule: () => import('https://unpkg.com/photoswipe'),
+    showAnimationDuration: 300,
+    hideAnimationDuration: 300,
+    zoom: true,
+    clickToCloseNonZoomable: true,
+    bgOpacity: 0.9,
+  });
+
+  lightbox.init();
 </script>
 </body>
 </html>
