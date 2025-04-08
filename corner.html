@@ -18,8 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.3/dist/photoswipe.css">
-    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.3/dist/default-skin/default-skin.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -78,51 +77,25 @@
                           
                 <h3 class="mb-4">Apartment Views</h3>
                 <div class="gallery-grid">
-                    <div class="row g-3" itemscope itemtype="http://schema.org/ImageGallery">
+                    <div class="row g-3">
                         <div class="col-md-6">
-                            <a href="assets/img/rooms/corner-1.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="_blank">
-                            <img data-src="assets/img/rooms/corner-1.jpg" srcset="assets/img/rooms/corner-1.jpg 600w" class="img-fluid rounded" alt="Main room" loading="lazy" itemprop="thumbnail">
+                            <a href="assets/img/rooms/corner-1.jpg" data-lightbox="corner" data-title="apartment">
+                            <img data-src="assets/img/rooms/corner-1.jpg" srcset="assets/img/rooms/corner-1.jpg 600w" class="zoomable img-fluid rounded" alt="apartment" loading="lazy" itemprop="thumbnail">
                             </a>
                         </div>
-                        <div class="col-md-6" itemscope itemtype="http://schema.org/ImageGallery">
-                            <a href="assets/img/rooms/corner-2.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="_blank">
-                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="img-fluid rounded" alt="Closet" loading="lazy" itemprop="thumbnail"'>
+                        <div class="col-md-6">
+                            <a href="assets/img/rooms/corner-2.jpg" data-lightbox="corner" data-title="living room">
+                            <img data-src="assets/img/rooms/corner-2.jpg" srcset="assets/img/rooms/corner-2.jpg 600w" class="zoomable img-fluid rounded" alt="living room" loading="lazy" itemprop="thumbnail"'>
                             </a>
                         </div>
-                        <div class="col-md-12" itemscope itemtype="http://schema.org/ImageGallery">
-                            <a href="assets/img/rooms/corner-3.jpg" data-pswp-width="1200" data-pswp-height="800" itemprop="contentUrl" data-cropped="true" target="_blank">
-                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="img-fluid rounded" alt="Corner windows" loading="lazy" itemprop="thumbnail">
+                        <div class="col-md-12">
+                            <a href="assets/img/rooms/corner-3.jpg" data-lightbox="corner' data-title="bangna">
+                            <img data-src="assets/img/rooms/corner-3.jpg" srcset="assets/img/rooms/corner-3.jpg 600w" class="zoomable img-fluid rounded" alt="Corner windows" loading="lazy" itemprop="thumbnail">
                             </a>
                         </div>
                     </div>
                 </div>
-                  <!-- PhotoSwipe Modal -->
-                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="pswp__bg"></div>
-                        <div class="pswp__scroll-wrap">
-                            <div class="pswp__container">
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                            </div>
-                            <div class="pswp__ui pswp__ui--hidden">
-                            <div class="pswp__top-bar">
-                                <div class="pswp__counter"></div>
-                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                                <button class="pswp__button pswp__button--share" title="Share"></button>
-                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                            </div>
-                            <div class="pswp__preloader">
-                            <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                  
             <div class="col-lg-4">
                 <div class="sidebar-card">
                     <div class="card mb-4">
@@ -175,87 +148,24 @@
                     </div>
                 </div>
         </footer>
-
-    <!-- Scripts -->
+       <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/photoswipe@5.2.3/dist/photoswipe.min.js"></script>
-    <script src="https://unpkg.com/photoswipe@5.2.3/dist/photoswipe-ui-default.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA4_ID"></script>
-    <script type="module">
-  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: '.gallery',
-    children: 'a',
-    pswpModule: () => import('https://unpkg.com/photoswipe'),
-    showAnimationDuration: 300,
-    hideAnimationDuration: 300,
-    zoom: true,
-    clickToCloseNonZoomable: true,
-    bgOpacity: 0.9,
-  });
-
-  lightbox.init();
-</script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-YOUR_GA4_ID');
 </script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize PhotoSwipe
-    const pswpElement = document.querySelector('.pswp');
-    const galleryLinks = document.querySelectorAll('.gallery-grid a[itemprop="contentUrl"]');
-    
-    // Prepare gallery items
-    const items = Array.from(galleryLinks).map(link => ({
-        src: link.href,
-        w: parseInt(link.dataset.pswpWidth, 10),
-        h: parseInt(link.dataset.pswpHeight, 10),
-        msrc: link.querySelector('img').getAttribute('data-src')}));
-
-    // Click handlers
-    galleryLinks.forEach((link, index) => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const options = {
-                index: index,
-                bgOpacity: 0.9,
-                closeOnClick: true,
-                pinchToClose: true,
-                showHideOpacity: true,
-                clickToCloseNonZoomable: true,
-                closeOnVerticalDrag: true,
-                getThumbBoundsFn: (index) => {
-                    const thumbnail = link.querySelector('img');
-                    const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
-                    const rect = thumbnail.getBoundingClientRect();
-                    return {x: rect.left, y: rect.top + pageYScroll, w: rect.width};
-                }
-            };
-
-            const gallery = new PhotoSwipe(
-                pswpElement,
-                PhotoSwipeUI_Default,
-                items,
-                options
-            );
-            
-            // handle image closing properly
-            gallery.listen('close', () => {
-                document.documentElement.style.overflow = 'auto';
-            });
-            
-            gallery.init();
-                document.documentElement.style.overflow = 'hidden';
-            });     
-        });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/zooming@1.0.0/dist/zooming.min.js"></script>
+    <script>
+    const zoom = new Zooming({
+        customSize: 400,  // to adjust zoom size
+        scrollThreshold: 0.1,  // speed of zoom scroll
     });
+    zoom.listen('.zoomable');  // listen to all class="zoomable.. 
 </script>
 </body>
 </html>
