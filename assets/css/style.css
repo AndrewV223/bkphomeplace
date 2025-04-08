@@ -194,7 +194,7 @@ body {
   color: white;
   font-size: 2rem;
   padding: 1rem;
- /* cursor: pointer;*/
+  cursor: pointer;
   transition: background var(--transition-speed) ease;
 }
 
