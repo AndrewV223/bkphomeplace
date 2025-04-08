@@ -147,7 +147,7 @@ body {
   height: 200px;
   object-fit: cover;
 }
-.pswp__img {
+/*.pswp__img {
   pointer-events: none !important;
 }
 .pswp__button--arrow {
@@ -160,7 +160,7 @@ body {
 }
 .pswp__scroll-wrap {
   -webkit-overflow-scrolling: touch;
-}
+}*/
 /* Lightbox */
 .lightbox {
   position: fixed;
@@ -194,7 +194,7 @@ body {
   color: white;
   font-size: 2rem;
   padding: 1rem;
-  cursor: pointer;
+ /* cursor: pointer;*/
   transition: background var(--transition-speed) ease;
 }
 
