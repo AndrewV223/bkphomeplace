@@ -20,8 +20,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
     <link href="assets/css/style.css" rel="stylesheet">  
-    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
     
@@ -48,9 +48,9 @@
     <!-- Hero Section showcase-->
     <section class="hero">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div id="lightgallery" class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="assets/img/exterior-1.jpg" data-lightbox="exterior-1.jpg" data-title="Apartment exterior">
+                    <a href="assets/img/exterior-1.jpg" data-lightbox="exterior-1.jpg" data-sub-html="Apartment exterior">
                     <img src="assets/img/exterior-1.jpg" srcset="assets/img/exterior-1.jpg 600w" class="zoomable d-block w-100" alt="Apartment exterior">
                     <div class="carousel-caption">
                         <h1>การใช้ชีวิตในบางนา | Living in Bangna</h1>
@@ -59,7 +59,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="assets/img/flea-market.jpg" data-lightbox="flea-market.jpg" data-title="Local area">
+                    <a href="assets/img/flea-market.jpg" data-lightbox="flea-market.jpg" data-sub-html="Local area">
                     <img src="assets/img/flea-market.jpg" class="zoomable d-block w-100" alt="Local area">
                     <div class="carousel-caption">
                         <h1>Explore Bangna</h1>
@@ -68,7 +68,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="assets/img/interior-1.jpg" data-lightbox="interior-1.jpg" data-title="Local area">
+                    <a href="assets/img/interior-1.jpg" data-lightbox="interior-1.jpg" data-sub-html="Local area">
                     <img src="assets/img/interior-1.jpg" class="zoomable d-block w-100" alt="Local area">
                     <div class="carousel-caption">
                         
@@ -207,17 +207,26 @@
             </div>
         </div>
     </footer>
-
     <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>-->
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA4_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-YOUR_GA4_ID');
+</script>
+     <script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: 'a',
+        download: false,  
+        zoom: true,       
+        thumbnail: true   
+    });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 <script src="https://unpkg.com/zooming@1.0.0/dist/zooming.min.js"></script>
