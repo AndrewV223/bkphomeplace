@@ -303,6 +303,7 @@
       border-radius: 8px;
       max-width: 500px;
       margin: auto;
+      text-color: blue;
     }
     input, textarea {
       width: 100%;
@@ -323,41 +324,25 @@
       background: #0056b3;
     }
   </style>
-</head>
-<body>
 
-  <h1>Contact BKP Homeplace</h1>
-  <p>Fill out the form below and we’ll get back to you soon.</p>
-
-  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contact">
-    
-    <p hidden>
-      <label>Don’t fill this out: <input name="bot-field" /></label>
-    </p>
-    
-    <p>
-      <label>Your Name:<br>
-        <input type="text" name="name" required>
-      </label>
-    </p>
-
-    <p>
-      <label>Your Email:<br>
-        <input type="email" name="email" required>
-      </label>
-    </p>
-
-    <p>
-      <label>Your Message:<br>
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-    </p>
-
-    <p><button type="submit">Send Message</button></p>
-  </form>
-
-
+<div class="col-md-6">
+        <h2>Send us a message</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+</div>
 
             </div>
         </div>
