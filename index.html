@@ -327,7 +327,7 @@
 
     <div class="col-md-4">
         <h2>Send us a message</h2>
-          <form class="bg-dark text-light py-4" name="contact" method="POST" data-netlify="true" class="bg-dark text-light py-4">
+          <form class="bg-dark text-light py-4" name="contact" method="POST" data-netlify="true" netlify class="bg-dark text-light py-4">
             <input type="hidden" name="form-name" value="contact" />
             
               <div class="mb-3">
@@ -379,6 +379,15 @@
         scrollThreshold: 0.1,  
     });
     zoom.listen('.zoomable'); 
+</script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    if (!this.checkValidity()) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    this.classList.add("was-validated");
+  }, false);
 </script>
 
 </body>
