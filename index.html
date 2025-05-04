@@ -295,15 +295,15 @@
     body {
       font-family: sans-serif;
       padding: 2rem;
-      background-color: #f5f5f5;
+      /*background-color: #f5f5f5;*/
     }
     form {
       background: white;
       padding: 1.5rem;
       border-radius: 8px;
-      max-width: 500px;
+      max-width: 400px;
       margin: auto;
-      text-color: blue;
+      
     }
     input, textarea {
       width: 100%;
@@ -314,7 +314,7 @@
     }
     button {
       background: #007BFF;
-      color: blue;
+      color: white;
       padding: 0.75rem 1.5rem;
       border: none;
       border-radius: 4px;
@@ -327,7 +327,7 @@
 
 <div class="col-md-4">
         <h2>Send us a message</h2>
-        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+        <form class="bg-dark text-light py-4" action="https://formspree.io/f/{your_form_id}" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
