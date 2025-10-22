@@ -108,7 +108,7 @@
         {
         "id": 8,
         "name": "Paradise Park"
-        "category":"mall/food court",
+        "category":"shopping",
         "distance": "6 km",
         "travel_time": {
             "car": "15 min",
@@ -152,5 +152,6 @@
       }
     ]
   }
+
 
 
