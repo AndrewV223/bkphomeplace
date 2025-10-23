@@ -119,9 +119,36 @@
             "website": "https://www.paradisepark.co.th/",
             "description": "Paradise Park"
         },
-        
-      {
+         {
         "id": 9,
+        "name": "Ancient City (Muang Boran)",
+        "category": "leisure",
+        "distance": "18.2 km",
+        "travel_time": {
+          "car": "26 min",
+          "walk": "4h 30 min"
+        },
+        "image": "assets/img/leisure/Muang-boran.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/296,+The+Ancient+City,+1+Sukhumvit+Rd,+Bang+Pu+Mai,+Mueang+Samut+Prakan+District,+Samut+Prakan+10280,+Thailand/@13.601989,100.5636617,16809m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d587d0bf731eb:0x2e55b55dfe4082c7!2m2!1d100.6225741!2d13.5386026!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.muangboranmuseum.com/en",
+        "description": "Thailand life-sized and scaled down replicas of prominent buildings and monuments."
+      },
+         {
+        "id": 10,
+        "name": "Chang erawan shrine",
+        "category": "leisure",
+        "distance": "12.2 km",
+        "travel_time": {
+          "car": "20 min",
+          "walk": "2h 51 min"
+        },
+        "image": "assets/img/leisure/Chang-erawan.jpg",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Chang+Erawan,+Tambon+Pak+Nam,+Amphoe+Mueang+Samut+Prakan,+Chang+Wat+Samut+Prakan+10270,+Thailand/@13.6341342,100.5429163,16806m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e2a0e96d53a661:0x2dc31b06a7c87782!2m2!1d100.59011!2d13.62145!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "website":"https://www.muangboranmuseum.com/en/landmark/the-erawan-museum/",
+        "description": "3 massive headed elephant shrine"
+      },
+      {
+        "id": 11,
         "name": "Raffles American School Bangkok",
         "category": "school",
         "distance": "6.6 km",
@@ -136,7 +163,7 @@
         "description": "Raffles American School."
       },
       {
-        "id": 10,
+        "id": 12,
         "name": "Dusit Thani College",
         "category": "school",
         "distance": "9.1 km",
@@ -152,6 +179,7 @@
       }
     ]
   }
+
 
 
 
