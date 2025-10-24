@@ -351,7 +351,7 @@
     "travel_time": { "car": "35 min", "bike": "40 min" },
     "image": "assets/img/shopping/iconsiam.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/ICONSIAM,+299+Charoen+Nakhon+Rd,+Bangkok",
-    "website": "https://www.iconsiam.com/",
+    "website": "https://www.iconsiam.com/"
   },
   {
     "id": 25,
@@ -361,7 +361,7 @@
     "travel_time": { "car": "30 min", "bike": "35 min" },
     "image": "assets/img/shopping/siam-paragon.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Siam+Paragon,+991+Rama+I+Rd,+Bangkok",
-    "website": "https://www.siamparagon.co.th",
+    "website": "https://www.siamparagon.co.th"
   },
   {
     "id": 26,
@@ -371,7 +371,7 @@
     "travel_time": { "car": "32 min", "bike": "38 min" },
     "image": "assets/img/shopping/centralworld.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/CentralWorld,+999/9+Rama+I+Rd,+Bangkok",
-    "website": "https://www.centralworld.co.th",
+    "website": "https://www.centralworld.co.th"
   },
   {
     "id": 27,
@@ -381,7 +381,7 @@
     "travel_time": { "car": "25 min", "bike": "30 min" },
     "image": "assets/img/shopping/emquartier.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/EmQuartier,+695+Sukhumvit+Rd,+Bangkok",
-    "website": "https://www.emquartier.co.th",
+    "website": "https://www.emquartier.co.th"
   },
   {
     "id": 28,
@@ -401,7 +401,7 @@
     "travel_time": { "car": "1 hr 42 min", "bike": "1 hr 58 min" },
     "image": "assets/img/shopping/central-festival-pattaya.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Central+Festival+Pattaya+Beach,+Pattaya,+Chon+Buri",
-    "website": "https://www.centralfestival.co.th/branch/pattaya-beach/",
+    "website": "https://www.centralfestival.co.th/branch/pattaya-beach/"
   },
   {
     "id": 30,
@@ -411,7 +411,7 @@
     "travel_time": { "car": "1 hr 40 min", "bike": "1 hr 55 min" },
     "image": "assets/img/shopping/mike-shopping-mall-pattaya.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Mike+Shopping+Mall,+Pattaya+City,+Chon+Buri",
-    "website": "",
+    "website": ""
   },
   {
     "id": 31,
@@ -421,7 +421,7 @@
     "travel_time": { "car": "16 min", "bike": "50 min" },
     "image": "assets/img/shopping/seacon-square-srinagarindra.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Seacon+Square+Srinagarindra,+Bangkok",
-    "website": "https://www.seaconsquare.com",
+    "website": "https://www.seaconsquare.com"
   },
   {
     "id": 32,
@@ -431,7 +431,7 @@
     "travel_time": { "car": "20 min", "bike": "25 min" },
     "image": "assets/img/shopping/central-village-outlet.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Central+Village+Bangkok+Luxury+Outlet,+Samut+Prakan",
-    "website": "https://www.centralvillagebangkok.com/",
+    "website": "https://www.centralvillagebangkok.com/"
   },
   {
     "id": 33,
@@ -441,7 +441,7 @@
     "travel_time": { "car": "15 min", "bike": "18 min" },
     "image": "assets/img/shopping/imperial-world-samrong.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Imperial+World+Samrong,+Samut+Prakan",
-    "website": "",
+    "website": ""
   },
          {
     "id": 34,
@@ -455,7 +455,7 @@
     "image": "assets/img/shopping/central-village-outlet.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Central+Village+Bangkok+Luxury+Outlet,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan",
     "website": "https://www.centralvillagebangkok.com/",
-    "description": "Thailand’s first international luxury outlet near Suvarnabhumi Airport — discount designer brands and premium experience.",
+    "description": "Thailand’s first international luxury outlet near Suvarnabhumi Airport — discount designer brands and premium experience."
   },
   {
     "id": 35,
@@ -469,7 +469,7 @@
     "image": "assets/img/shopping/imperial-world-samrong.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Imperial+World+Samrong,+Samut+Prakan",
     "website": "",
-    "description": "Large local shopping mall in Samrong area offering food, retail and entertainment scenes for families.",
+    "description": "Large local shopping mall in Samrong area offering food, retail and entertainment scenes for families."
   },
   {
     "id": 36,
@@ -483,7 +483,7 @@
     "image": "assets/img/shopping/central-plaza-bangna.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Central+Plaza+Bangna,+Bang+Na,+Bangkok",
     "website": "",
-    "description": "Well-known shopping centre in Bang Na district with cinema, retail stores and restaurants. :contentReference[oaicite:0]{index=0}",
+    "description": "Well-known shopping centre in Bang Na district with cinema, retail stores and restaurants. :contentReference[oaicite:0]{index=0}"
   },
   {
     "id": 37,
@@ -497,7 +497,7 @@
     "image": "assets/img/shopping/siam-premium-outlets.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Siam+Premium+Outlets+Bangkok,+Bang+Na-Trad+Road",
     "website": "",
-    "description": "Outlet mall offering brand-name discounts; listed among Samut Prakan shopping malls. :contentReference[oaicite:1]{index=1}",
+    "description": "Outlet mall offering brand-name discounts; listed among Samut Prakan shopping malls. :contentReference[oaicite:1]{index=1}"
   },
   {
     "id": 38,
@@ -511,7 +511,7 @@
     "image": "assets/img/shopping/market-village-suvarnabhumi.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Market+Village+Suvarnabhumi,+Lat+Krabang,+Bangkok",
     "website": "",
-    "description": "Shopping centre near Suvarnabhumi Airport serving locals and travellers; included in Samut Prakan shopping lists. :contentReference[oaicite:2]{index=2}",
+    "description": "Shopping centre near Suvarnabhumi Airport serving locals and travellers; included in Samut Prakan shopping lists. :contentReference[oaicite:2]{index=2}"
   },
         {
     "id": 39,
@@ -525,7 +525,7 @@
     "image": "assets/img/shopping/terminal21.jpg",
     "map": "https://www.google.com/maps/place/Terminal+21+Bangkok",
     "website": "https://www.terminal21.co.th/",
-    "description": "Themed mall in Asok area with floors representing different world cities, popular for shopping and food.",
+    "description": "Themed mall in Asok area with floors representing different world cities, popular for shopping and food."
   },
   {
     "id": 40,
@@ -539,7 +539,7 @@
     "image": "assets/img/shopping/true-digital-park.jpg",
     "map": "https://www.google.com/maps/place/True+Digital+Park",
     "website": "https://www.truedigitalpark.com/",
-    "description": "Tech-focused mall and office space in Phra Khanong, includes lifestyle stores, tech brands, and co-working spaces.",
+    "description": "Tech-focused mall and office space in Phra Khanong, includes lifestyle stores, tech brands, and co-working spaces."
   },
   {
         "id": 24,
@@ -573,6 +573,7 @@
       }
     ]
   }
+
 
 
 
