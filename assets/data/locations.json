@@ -541,6 +541,62 @@
     "website": "https://www.truedigitalpark.com/",
     "description": "Tech-focused mall and office space in Phra Khanong, includes lifestyle stores, tech brands, and co-working spaces."
   },
+        {
+            "id": 41,
+    "name": "Chakrabongse Dining",
+    "category": "Dining",
+    "distance": "≈ 23.5 km",
+    "travel_time": {
+      "car": "1h 10 min",
+      "motorcycle": "55 min"
+    },
+    "image":"assets/img/dining/Chakrabongse-dining.jpg",
+    "map": "https://www.google.com/maps/dir/13.657658,100.6606909/Chakrabongse+Palace,+396+Maha+Rat+Rd,+Phra+Borom+Maha+Ratchawang,+Phra+Nakhon,+Bangkok+10200/@13.7182522,100.4910394,21325m/data=!3m1!1e3!4m11!4m10!1m1!4e1!1m5!1m1!1s0x30e299045e990cd3:0x9b282fee8f818ffa!2m2!1d100.4931706!2d13.7437172!3e0!5i1?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+    "website": "https://chakrabongsevillas.com/dining/",
+    "description": "Michelin status Elegant Thai Fine Dining <Ideal for special Outdoor, Garden & riverside terrace dining>"
+  },
+               {
+            "id": 42,
+    "name": "Scarlett Wine Bar & Restaurant",
+    "category": "Dining",
+    "distance": "≈ 21.5 km",
+    "travel_time": {
+      "car": "40 min",
+      "motorcycle": "37 min"
+    },
+    "image":"assets/img/dining/Scarlett-bar.jpg",
+    "map": "https://www.google.com/maps/dir/13.6576588,100.6606937/Scarlett+Wine+Bar+%26+Restaurant+188+Si+Lom+Rd,+Khwaeng+Suriya+Wong,+Bang+Rak,+Bangkok+10500/@13.7011864,100.5609602,21326m/data=!3m1!1e3!4m11!4m10!1m1!4e1!1m5!1m1!1s0x30e29f2d53eebdc1:0xdc0f7d2d295f34e6!2m2!1d100.525876!2d13.726056!3e0!5i1?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.randblab.com/scarlett-bangkok/#menu",
+    "description": "Michelin status Upscale French cuisine, great wine and panoramic views of Bangkok skyline"
+  },
+                     {
+            "id": 43,
+    "name": "Elements, by Ciel Bleu",
+    "category": "Dining",
+    "distance": "≈ 18.6 km",
+    "travel_time": {
+      "car": "30 min",
+      "motorcycle": "39 min"
+    },
+    "image":"assets/img/dining/Elements-Bangkok.jpg",
+    "map": "https://www.google.com/maps/dir/13.6576612,100.6606888/Elements,+Inspired+by+Ciel+Bleu,+57+Wireless+Rd,+Khwaeng+Lumphini,+Pathum+Wan,+Krung+Thep+Maha+Nakhon+10330/@13.7071672,100.6038034,21326m/data=!3m2!1e3!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x30e29edeb228e9e7:0x2e299ac04828adbb!2m2!1d100.547793!2d13.742838!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.okurabangkok.com/",
+    "description": "Reservation recommended| Michelin inspired by Ciel Bleu French cuisine with Japanese influences at THE OKURA PRESTIGE BANGKOK HOTEL "
+  },
+                           {
+            "id": 44,
+    "name": "Issaya Siamese Club",
+    "category": "Dining",
+    "distance": "≈ 16.3 km",
+    "travel_time": {
+      "car": "25 min",
+      "motorcycle": "33 min"
+    },
+    "image":"assets/img/dining/Issaya-club.jpg",
+    "map": "https://www.google.com/maps/dir/13.6576612,100.6606888/Issaya+Siamese+Club,+4+Chuea+Phloeng+2+Alley,+Thung+Maha+Mek,+Sathon,+Bangkok+10120/@13.6891085,100.6069746,21328m/data=!3m2!1e3!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x30e29f3d640b7909:0xd9b22f7e4b871fa2!2m2!1d100.5519427!2d13.7205394!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.issaya.com/reservation",
+    "description": "Reservation, Michelin Chef Ian Kittichai's Contemporary Thai cuisine outdoor garden dining"
+  },
   {
         "id": 24,
         "name": "Raffles American School Bangkok",
@@ -573,6 +629,7 @@
       }
     ]
   }
+
 
 
 
