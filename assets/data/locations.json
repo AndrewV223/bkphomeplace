@@ -157,12 +157,195 @@
           "walk": "1h 26 min"
         },
         "image": "assets/img/leisure/Suang-luang-rama-9.jpg",
+            "website": "https://www.bangkok.go.th/parksu/",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Suan+Luang+Rama+IX,+Chaloem+Phrakiat+Ratchakan+Thi+9+Road,+%E0%B9%80%E0%B9%80%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%99+Prawet,+Bangkok,+Thailand/@13.6780135,100.6345627,4201m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d609431a959bb:0x181f483771e2d444!2m2!1d100.6641942!2d13.688319!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
         
         "description": "Local Park Suang Luang Rama 9"
       },
+        
+  {
+    "id": 12,
+    "name": "Bang Pu Recreation Center",
+    "category": "nature",
+    "distance": "22.4 km",
+    "travel_time": {
+      "car": "35 min",
+      "bike": "50 min",
+      "walk": "4 hr"
+    },
+    "image": "assets/img/nature/bangpu.jpg",
+    "map": "https://maps.google.com/?q=Bang+Pu+Recreation+Center",
+    "website": "https://www.tourismthailand.org/Attraction/Bang-Pu-Seaside-Resort",
+    "description": "Famous seaside pier for bird-watching and sunset views with local seafood restaurants and ocean breeze."
+  },
+  {
+    "id": 13,
+    "name": "Pororo AquaPark Bangkok",
+    "category": "family",
+    "distance": "4.5 km",
+    "travel_time": {
+      "car": "10 min",
+      "bike": "15 min",
+      "walk": "50 min"
+    },
+    "image": "assets/img/family/pororoaquapark.jpg",
+    "map": "https://maps.google.com/?q=Pororo+AquaPark+Bangkok",
+    "website": "https://www.pororoaquaparkbangkok.com/",
+    "description": "Rooftop water park themed after the Korean cartoon Pororo. Great for kids and family fun inside Central Bangna."
+  },
+  {
+    "id": 14,
+    "name": "Navy Golf Course Bangna",
+    "category": "sport",
+    "distance": "12.3 km",
+    "travel_time": {
+      "car": "20 min",
+      "bike": "30 min",
+      "walk": "2 hr"
+    },
+    "image": "assets/img/sport/navygolf.jpg",
+    "map": "https://maps.google.com/?q=Navy+Golf+Course+Bangna",
+    "website": "",
+    "description": "Scenic 27-hole golf course surrounded by lakes and greenery. Open to public visitors."
+  },
+  {
+    "id": 15,
+    "name": "Wat Sri Iam",
+    "category": "temple",
+    "distance": "5.2 km",
+    "travel_time": {
+      "car": "12 min",
+      "bike": "18 min",
+      "walk": "55 min"
+    },
+    "image": "assets/img/temple/watsriiam.jpg",
+    "map": "https://maps.google.com/?q=Wat+Sri+Iam+Bangna",
+    "website": "",
+    "description": "Peaceful local temple known for its large golden Buddha statue and community atmosphere."
+  },
+  {
+    "id": 16,
+    "name": "Bang Kachao",
+    "category": "nature",
+    "distance": "18.6 km",
+    "travel_time": {
+      "car": "30 min",
+      "bike": "45 min",
+      "walk": "3 hr 30 min"
+    },
+    "image": "assets/img/nature/bangkachao.jpg",
+    "map": "https://maps.google.com/?q=Bang+Kachao",
+    "website": "https://www.tourismthailand.org/Attraction/Bang-Kachao",
+    "description": "Known as Bangkok’s Green Lung, this island offers bike paths, homestays, and floating markets surrounded by nature."
+  },
+  {
+    "id": 17,
+    "name": "BITEC Bangkok",
+    "category": "events",
+    "distance": "6.1 km",
+    "travel_time": {
+      "car": "15 min",
+      "bike": "22 min",
+      "walk": "1 hr 5 min"
+    },
+    "image": "assets/img/events/bitec.jpg",
+    "map": "https://maps.google.com/?q=BITEC+Bangna",
+    "website": "https://www.bitec.co.th/",
+    "description": "Major convention and exhibition center hosting trade shows, concerts, and large-scale events near Bang Na BTS."
+  },
+  {
+    "id": 18,
+    "name": "Bangkok Art Village",
+    "category": "art",
+    "distance": "9.4 km",
+    "travel_time": {
+      "car": "18 min",
+      "bike": "25 min",
+      "walk": "1 hr 40 min"
+    },
+    "image": "assets/img/art/bangkokartvillage.jpg",
+    "map": "https://maps.google.com/?q=Bangna+Art+Village",
+    "website": "",
+    "description": "Creative community featuring local Thai artists, street murals, and cultural workshops in Bang Na."
+  },
+{
+    "id": 19,
+    "name": "Bang Na Navy Golf Course",
+    "category": "sport",
+    "distance": "12 km",
+    "travel_time": {
+      "car": "20 min",
+      "bike": "30 min",
+      "walk": "2 hr"
+    },
+    "image": "assets/img/sport/navy-golf-bangna.jpg",
+    "map": "https://maps.google.com/?q=Bang+Na+Royal+Thai+Navy+Golf+Course",
+    "website": "",
+    "description": "A scenic golf course near Bang Na offering 27 holes amidst greenery and water hazards."
+  },
+  {
+    "id": 20,
+    "name": "Bang Nam Phueng Floating Market",
+    "category": "market",
+    "distance": "15 km",
+    "travel_time": {
+      "car": "25 min",
+      "bike": "35 min",
+      "walk": "1 hr 45 min"
+    },
+    "image": "assets/img/market/bang-nam-phueng.jpg",
+    "map": "https://maps.google.com/?q=Bang+Nam+Phueng+Floating+Market",
+    "website": "",
+    "description": "A charming floating market along Khlong Bang Nam Phueng – local goods, street-food boats and relaxed atmosphere."
+  },
+  {
+    "id": 21,
+    "name": "Wat Bang Na Nai",
+    "category": "temple",
+    "distance": "6 km",
+    "travel_time": {
+      "car": "15 min",
+      "bike": "20 min",
+      "walk": "50 min"
+    },
+    "image": "assets/img/temple/wat-bang-na-nai.jpg",
+    "map": "https://maps.google.com/?q=Wat+Bang+Na+Nai",
+    "website": "",
+    "description": "Local temple in Bang Na district featuring a large white stupa and peaceful environment away from busy shopping malls."
+  },
+  {
+    "id": 22,
+    "name": "Taco Lake Wake Park",
+    "category": "leisure",
+    "distance": "20 km",
+    "travel_time": {
+      "car": "30 min",
+      "bike": "40 min",
+      "walk": "2 hr 30 min"
+    },
+    "image": "assets/img/leisure/taco-lake.jpg",
+    "map": "https://maps.google.com/?q=Taco+Lake+Wake+Park",
+    "website": "",
+    "description": "Wakeboarding and cable-park activities, fun for active visitors looking for something different around Bang Na-Trad highway."
+  },
+  {
+    "id": 23,
+    "name": "Bang Na Art & Culture Village",
+    "category": "art",
+    "distance": "9 km",
+    "travel_time": {
+      "car": "18 min",
+      "bike": "25 min",
+      "walk": "1 hr 30 min"
+    },
+    "image": "assets/img/art/bang-na-culture-village.jpg",
+    "map": "https://maps.google.com/?q=Bang+Na+Art+Village",
+    "website": "",
+    "description": "Creative community in Bang Na offering murals, art workshops, and local cafés — a relaxed spot for families and generation Alpha."
+  },
+
       {
-        "id": 12,
+        "id": 24,
         "name": "Raffles American School Bangkok",
         "category": "school",
         "distance": "6.6 km",
@@ -177,7 +360,7 @@
         "description": "Raffles American School."
       },
       {
-        "id": 13,
+        "id": 25,
         "name": "Dusit Thani College",
         "category": "school",
         "distance": "9.1 km",
@@ -193,6 +376,7 @@
       }
     ]
   }
+
 
 
 
