@@ -188,9 +188,9 @@
       "bike": "15 min",
       "walk": "50 min"
     },
-    "image": "assets/img/family/pororoaquapark.jpg",
+    "image": "assets/img/leisure/Pororo-aquapark.jpg",
     "map": "https://maps.google.com/?q=Pororo+AquaPark+Bangkok",
-    "website": "https://www.pororoaquaparkbangkok.com/",
+    "website": "http://www.pororoaquapark.com/en/main",
     "description": "Rooftop water park themed after the Korean cartoon Pororo. Great for kids and family fun inside Central Bangna."
   },
   {
@@ -629,6 +629,7 @@
       }
     ]
   }
+
 
 
 
