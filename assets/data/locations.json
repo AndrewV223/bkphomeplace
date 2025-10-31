@@ -181,7 +181,7 @@
   {
     "id": 13,
     "name": "Pororo AquaPark Bangkok",
-    "category": "family",
+    "category": "leisure",
     "distance": "4.5 km",
     "travel_time": {
       "car": "10 min",
@@ -629,6 +629,7 @@
       }
     ]
   }
+
 
 
 
