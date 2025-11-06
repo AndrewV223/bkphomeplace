@@ -349,9 +349,10 @@
     "category": "shopping",
     "distance": "≈ 27 km",
     "travel_time": { "car": "35 min", "bike": "40 min" },
-    "image": "assets/img/shopping/Icon-siam.jpg",
+    "image": "assets/img/shopping/Icon-siam2.jpg",
     "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/ICONSIAM,+299+Charoen+Nakhon+Rd,+Khlong+Ton+Sai,+Khlong+San,+Bangkok+10600,+Thailand/@13.7036454,100.4119007,33603m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e299cd81f01815:0x1660bd86761a92f4!2m2!1d100.509947!2d13.7264814?entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D",
-    "website": "https://www.iconsiam.com/en"
+    "website": "https://www.iconsiam.com/en",
+      "description": "Located on the banks of the Chao Phraya River in Bangkok, ICONSIAM is a grand riverside landmark that blends luxury shopping, Thai culture, entertainment and spectacular architecture"
   },
   {
     "id": 25,
@@ -362,6 +363,7 @@
     "image": "assets/img/shopping/siam-paragon.jpg",
     "map": "https://www.google.com/maps/dir/Your+Location/Siam+Paragon,+991+Rama+I+Rd,+Bangkok",
     "website": "https://www.siamparagon.co.th"
+      
   },
   {
     "id": 26,
@@ -629,6 +631,7 @@
       }
     ]
   }
+
 
 
 
