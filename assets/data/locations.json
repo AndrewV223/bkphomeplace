@@ -218,8 +218,8 @@
       "bike": "18 min",
       "walk": "55 min"
     },
-    "image": "assets/img/temple/watsriiam.jpg",
-    "map": "https://maps.google.com/?q=Wat+Sri+Iam+Bangna",
+    "image": "assets/img/temple/wat-sri-lam.jpg",
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Wat+Sri+Iam,+9+Debaratna+Rd,+Bang+Na+Nuea,+Bang+Na,+Bangkok+10260,+Thailand/@13.6646168,100.631696,4201m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5fc2395897b9:0x2b60ae62f9089646!2m2!1d100.6440648!2d13.6683967!3e0?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
     "website": "",
     "description": "Peaceful local temple known for its large golden Buddha statue and community atmosphere."
   },
@@ -631,6 +631,7 @@
       }
     ]
   }
+
 
 
 
