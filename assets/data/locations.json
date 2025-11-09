@@ -361,8 +361,8 @@
     "distance": "≈ 22 km",
     "travel_time": { "car": "30 min", "bike": "35 min" },
     "image": "assets/img/shopping/siam-paragon.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Siam+Paragon,+991+Rama+I+Rd,+Bangkok",
-    "website": "https://www.siamparagon.co.th"
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Siam+Paragon,+991+Rama+I+Rd,+Pathum+Wan,+Bangkok+10330,+Thailand/@13.705149,100.5170666,16801m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e29ecde3aee521:0x9f43939a2caf2963!2m2!1d100.5347792!2d13.7461302!3e0?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.siamparagon.co.th/"
       
   },
   {
@@ -371,9 +371,9 @@
     "category": "shopping",
     "distance": "≈ 23 km",
     "travel_time": { "car": "32 min", "bike": "38 min" },
-    "image": "assets/img/shopping/centralworld.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/CentralWorld,+999/9+Rama+I+Rd,+Bangkok",
-    "website": "https://www.centralworld.co.th"
+    "image": "assets/img/shopping/central-world.jpg",
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/centralwOrld,+999%2F9+Rama+I+Rd,+Pathum+Wan,+Bangkok+10330,+Thailand/@13.7038148,100.5168327,16801m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e29ecfc2f455e1:0xc4ad0280d8906604!2m2!1d100.5391488!2d13.7465337!3e0?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.centralworld.co.th/en/home"
   },
   {
     "id": 27,
@@ -382,18 +382,18 @@
     "distance": "≈ 19 km",
     "travel_time": { "car": "25 min", "bike": "30 min" },
     "image": "assets/img/shopping/emquartier.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/EmQuartier,+695+Sukhumvit+Rd,+Bangkok",
-    "website": "https://www.emquartier.co.th"
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/EmQuartier,+Sukhumvit+Road,+Khlong+Tan+Nuea,+Watthana,+Bangkok,+Thailand/@13.6972247,100.5215506,16802m/data=!3m1!1e3!4m15!4m14!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e29f018cce6271:0x3314589d712fb05a!2m2!1d100.5694763!2d13.7312253!3e0!5i1?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
+    "website": "https://emdistrict.com/home/"
   },
   {
     "id": 28,
-    "name": "Terminal 21 Pattaya",
+    "name": "Terminal 21 Asok",
     "category": "shopping",
     "distance": "≈ 98 km",
     "travel_time": { "car": "1 hr 45 min", "bike": "2 hr" },
-    "image": "assets/img/shopping/terminal21-pattaya.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Terminal+21+Pattaya,+Pattaya+City,+Chon+Buri",
-    "website": "https://www.terminal21.co.th/pattaya/"
+    "image": "assets/img/shopping/terminal.jpg",
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Terminal+21,+Soi+Sukhumvit+19,+Khlong+Toei+Nuea,+Watthana,+Bangkok,+Thailand/@13.7047308,100.5215506,16801m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e29f1e6e996bb9:0x3383716c9b049379!2m2!1d100.5604058!2d13.7379635!5i2?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.terminal21.co.th/asok/"
   },
   {
     "id": 29,
@@ -631,6 +631,7 @@
       }
     ]
   }
+
 
 
 
