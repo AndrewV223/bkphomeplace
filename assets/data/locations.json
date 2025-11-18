@@ -173,7 +173,7 @@
       "bike": "50 min",
       "walk": "4 hr"
     },
-    "image": "assets/img/nature/bangpu.jpg",
+    "image": "assets/img/leisure/Bangpu.jpg",
     "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan/Bang+Pu+Recreation+Center,+164+Sukhumvit+Rd,+Bang+Pu+Mai,+Mueang+Samut+Prakan+District,+Samut+Prakan+10280/@13.5894367,100.5790007,21337m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5837aa3a2c21:0xe4ca91b86533299!2m2!1d100.6539698!2d13.513335?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D",
     "website": "https://www.tourismthailand.org/Attraction/Bang-Pu-Seaside-Resort",
     "description": "Famous seaside pier for bird-watching and sunset views with local seafood restaurants and ocean breeze."
@@ -635,6 +635,7 @@
       }
     ]
   }
+
 
 
 
