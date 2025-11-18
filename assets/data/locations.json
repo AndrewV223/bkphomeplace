@@ -419,36 +419,7 @@
     "map": "https://www.google.com/maps/dir/Your+Location/Mike+Shopping+Mall,+Pattaya+City,+Chon+Buri",
     "website": ""
   },
-  {
-    "id": 31,
-    "name": "Seacon Square Srinagarindra",
-    "category": "shopping",
-    "distance": "≈ 6.6 km",
-    "travel_time": { "car": "16 min", "bike": "50 min" },
-    "image": "assets/img/shopping/seacon-square-srinagarindra.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Seacon+Square+Srinagarindra,+Bangkok",
-    "website": "https://www.seaconsquare.com"
-  },
-  {
-    "id": 32,
-    "name": "Central Village Luxury Outlet",
-    "category": "shopping",
-    "distance": "≈ 16 km",
-    "travel_time": { "car": "20 min", "bike": "25 min" },
-    "image": "assets/img/shopping/central-village-outlet.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Central+Village+Bangkok+Luxury+Outlet,+Samut+Prakan",
-    "website": "https://www.centralvillagebangkok.com/"
-  },
-  {
-    "id": 33,
-    "name": "Imperial World Samrong",
-    "category": "shopping",
-    "distance": "≈ 9 km",
-    "travel_time": { "car": "15 min", "bike": "18 min" },
-    "image": "assets/img/shopping/imperial-world-samrong.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Imperial+World+Samrong,+Samut+Prakan",
-    "website": ""
-  },
+  
          {
     "id": 34,
     "name": "Central Village Luxury Outlet",
@@ -477,20 +448,7 @@
     "website": "",
     "description": "Large local shopping mall in Samrong area offering food, retail and entertainment scenes for families."
   },
-  {
-    "id": 36,
-    "name": "Central Plaza Bangna",
-    "category": "shopping",
-    "distance": "≈ 6 km",
-    "travel_time": {
-      "car": "12 min",
-      "bike": "20 min"
-    },
-    "image": "assets/img/shopping/central-plaza-bangna.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Central+Plaza+Bangna,+Bang+Na,+Bangkok",
-    "website": "",
-    "description": "Well-known shopping centre in Bang Na district with cinema, retail stores and restaurants. :contentReference[oaicite:0]{index=0}"
-  },
+  
   {
     "id": 37,
     "name": "Siam Premium Outlets Bangkok",
@@ -519,20 +477,7 @@
     "website": "",
     "description": "Shopping centre near Suvarnabhumi Airport serving locals and travellers; included in Samut Prakan shopping lists. :contentReference[oaicite:2]{index=2}"
   },
-        {
-    "id": 39,
-    "name": "Terminal 21 Asok",
-    "category": "shopping",
-    "distance": "≈ 10 km",
-    "travel_time": {
-      "car": "20 min",
-      "bike": "25 min"
-    },
-    "image": "assets/img/shopping/terminal21.jpg",
-    "map": "https://www.google.com/maps/place/Terminal+21+Bangkok",
-    "website": "https://www.terminal21.co.th/",
-    "description": "Themed mall in Asok area with floors representing different world cities, popular for shopping and food."
-  },
+       
   {
     "id": 40,
     "name": "True Digital Park",
@@ -635,6 +580,7 @@
       }
     ]
   }
+
 
 
 
