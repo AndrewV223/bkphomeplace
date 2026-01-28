@@ -119,6 +119,7 @@
             "website": "https://www.paradisepark.co.th/",
             "description": "Paradise Park"
         },
+        
          {
         "id": 9,
         "name": "Ancient City (Muang Boran)",
@@ -162,7 +163,20 @@
         
         "description": "Local Park Suang Luang Rama 9"
       },
-        
+        {
+            "id": 45,
+            "name": "Market Village Suvarnabhumi",
+            "category": "shopping",
+            "distance": "9.3 km",
+            'travel_time": {
+                "car": "15 min",
+                "walk": "90 min",
+                "bus": "40 min"
+        },
+        "image": "",
+        "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540,+Thailand/Market+Village+Suvarnabhumi,+99,+29+Debaratna+Rd,+Bang+Phli+Yai,+Bang+Phli+District,+Samut+Prakan+10540,+Thailand/@13.6466029,100.6467052,10666m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5c2a643e2a49:0x227d7de9416a3da0!2m2!1d100.7109538!2d13.6324493?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
+        "website": "http://www.marketvillagesuvarnabhumi.com/index.aspx",
+        "description": "Mid-size mall offering various stores, including a supermarket, plus dining, banks & a post office and near the airport."
   {
     "id": 12,
     "name": "Bang Pu Recreation Center",
@@ -580,6 +594,7 @@
       }
     ]
   }
+
 
 
 
