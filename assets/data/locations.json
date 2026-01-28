@@ -168,7 +168,7 @@
             "name": "Market Village Suvarnabhumi",
             "category": "shopping",
             "distance": "9.3 km",
-            'travel_time": {
+            "travel_time": {
                 "car": "15 min",
                 "walk": "90 min",
                 "bus": "40 min"
@@ -595,6 +595,7 @@
       }
     ]
   }
+
 
 
 
