@@ -215,11 +215,11 @@
     "distance": "12.3 km",
     "travel_time": {
       "car": "20 min",
-      "bike": "30 min",
+      "bus": "60 min",
       "walk": "2 hr"
     },
-    "image": "assets/img/sport/navygolf.jpg",
-    "map": "https://maps.google.com/?q=Navy+Golf+Course+Bangna",
+    "image": "assets/img/leisure/Bangna-golf.jpg",
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540,+Thailand/Bang+Na+Navy+Golf+Course,+%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B8%AD%E0%B8%A5%E0%B9%8C%E0%B8%9F%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%B5+4355+Soi+Phuti+Anant+Sports+Club,+Bang+Na+Tai,+Bang+Na,+Bangkok+10260,+Thailand/@13.6545741,100.5974139,10814m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e2a1001428d0dd:0xafbe8982efd20056!2m2!1d100.6095331!2d13.6648108?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
     "website": "",
     "description": "Scenic 27-hole golf course surrounded by lakes and greenery. Open to public visitors."
   },
@@ -595,6 +595,7 @@
       }
     ]
   }
+
 
 
 
