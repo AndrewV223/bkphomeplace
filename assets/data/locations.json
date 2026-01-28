@@ -497,14 +497,15 @@
     "id": 40,
     "name": "True Digital Park",
     "category": "shopping/tech",
-    "distance": "≈ 12 km",
+    "distance": "≈ 8.3 km",
     "travel_time": {
-      "car": "18 min",
-      "bike": "25 min"
+      "car": "15 min",
+        "bus": "45 min",
+      "walking": "1h 50 min"
     },
-    "image": "assets/img/shopping/true-digital-park.jpg",
-    "map": "https://www.google.com/maps/place/True+Digital+Park",
-    "website": "https://www.truedigitalpark.com/",
+    "image": "assets/img/shopping/True-park.jpg",
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540,+Thailand/True+Digital+Park,+101+%E0%B8%96%E0%B8%99%E0%B8%99+%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%B8%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%97+101%2F1+Bang+Chak,+Phra+Khanong,+Bangkok+10260,+Thailand/@13.6735261,100.5929011,10813m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e29ed269181bb1:0x60c3178ba983c76!2m2!1d100.6113255!2d13.6851839?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.truedigitalpark.com/en",
     "description": "Tech-focused mall and office space in Phra Khanong, includes lifestyle stores, tech brands, and co-working spaces."
   },
         {
@@ -595,6 +596,7 @@
       }
     ]
   }
+
 
 
 
