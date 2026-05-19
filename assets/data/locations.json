@@ -268,36 +268,7 @@
     "website": "https://www.bitec.co.th/",
     "description": "Major convention and exhibition center hosting trade shows, concerts, and large-scale events near Bang Na BTS."
   },
-  {
-    "id": 18,
-    "name": "Bangkok Art Village",
-    "category": "art",
-    "distance": "9.4 km",
-    "travel_time": {
-      "car": "18 min",
-      "bike": "25 min",
-      "walk": "1 hr 40 min"
-    },
-    "image": "assets/img/art/bangkokartvillage.jpg",
-    "map": "https://maps.google.com/?q=Bangna+Art+Village",
-    "website": "",
-    "description": "Creative community featuring local Thai artists, street murals, and cultural workshops in Bang Na."
-  },
-{
-    "id": 19,
-    "name": "Bang Na Navy Golf Course",
-    "category": "sport",
-    "distance": "12 km",
-    "travel_time": {
-      "car": "20 min",
-      "bike": "30 min",
-      "walk": "2 hr"
-    },
-    "image": "assets/img/sport/navy-golf-bangna.jpg",
-    "map": "https://maps.google.com/?q=Bang+Na+Royal+Thai+Navy+Golf+Course",
-    "website": "",
-    "description": "A scenic golf course near Bang Na offering 27 holes amidst greenery and water hazards."
-  },
+  
   {
     "id": 20,
     "name": "Bang Nam Phueng Floating Market",
@@ -314,21 +285,6 @@
     "description": "A charming floating market along Khlong Bang Nam Phueng – local goods, street-food boats and relaxed atmosphere."
   },
   {
-    "id": 21,
-    "name": "Wat Bang Na Nai",
-    "category": "temple",
-    "distance": "6 km",
-    "travel_time": {
-      "car": "15 min",
-      "bike": "20 min",
-      "walk": "50 min"
-    },
-    "image": "assets/img/temple/wat-bang-na-nai.jpg",
-    "map": "https://maps.google.com/?q=Wat+Bang+Na+Nai",
-    "website": "",
-    "description": "Local temple in Bang Na district featuring a large white stupa and peaceful environment away from busy shopping malls."
-  },
-  {
     "id": 22,
     "name": "Taco Lake Wake Park",
     "category": "leisure",
@@ -343,21 +299,7 @@
     "website": "https://www.facebook.com/tacolake?mibextid=ZbWKwL",
     "description": "Wakeboarding and cable-park activities, fun for active visitors looking for something different around Bang Na-Trad highway."
   },
-  {
-    "id": 23,
-    "name": "Bang Na Art & Culture Village",
-    "category": "art",
-    "distance": "9 km",
-    "travel_time": {
-      "car": "18 min",
-      "bike": "25 min",
-      "walk": "1 hr 30 min"
-    },
-    "image": "assets/img/art/bang-na-culture-village.jpg",
-    "map": "https://maps.google.com/?q=Bang+Na+Art+Village",
-    "website": "",
-    "description": "Creative community in Bang Na offering murals, art workshops, and local cafés — a relaxed spot for families and generation Alpha."
-  },
+  
   {
     "id": 24,
     "name": "ICONSIAM",
@@ -414,28 +356,8 @@
     "website": "https://www.terminal21.co.th/asok/",
 "description": " Terminal 21 is a shopping mall in Bangkok where each floor is designed to look like a famous city, such as London, Paris, Tokyo, Istanbul, San Francisco, and Rome."
   },
-  {
-    "id": 29,
-    "name": "Central Festival Pattaya Beach",
-    "category": "shopping",
-    "distance": "≈ 96 km",
-    "travel_time": { "car": "1 hr 42 min", "bike": "1 hr 58 min" },
-    "image": "assets/img/shopping/central-festival-pattaya.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Central+Festival+Pattaya+Beach,+Pattaya,+Chon+Buri",
-    "website": "https://www.centralfestival.co.th/branch/pattaya-beach/"
-  },
-  {
-    "id": 30,
-    "name": "Mike Shopping Mall Pattaya",
-    "category": "shopping",
-    "distance": "≈ 97 km",
-    "travel_time": { "car": "1 hr 40 min", "bike": "1 hr 55 min" },
-    "image": "assets/img/shopping/mike-shopping-mall-pattaya.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Mike+Shopping+Mall,+Pattaya+City,+Chon+Buri",
-    "website": ""
-  },
   
-         {
+  {
     "id": 34,
     "name": "Central Village Luxury Outlet",
     "category": "shopping",
