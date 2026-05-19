@@ -388,17 +388,16 @@
   
   {
     "id": 37,
-    "name": "Siam Premium Outlets Bangkok",
-    "category": "shopping",
+    "name": "Sailom Bangpu",
+    "category": "dining",
     "distance": "≈ 15 km",
     "travel_time": {
-      "car": "22 min",
-      "bike": "30 min"
+      "car": "40 min"
     },
-    "image": "assets/img/shopping/siam-premium-outlets.jpg",
-    "map": "https://www.google.com/maps/dir/Your+Location/Siam+Premium+Outlets+Bangkok,+Bang+Na-Trad+Road",
-    "website": "",
-    "description": "Outlet mall offering brand-name discounts; listed among Samut Prakan shopping malls. :contentReference[oaicite:1]{index=1}"
+    "image": "assets/img/dining/Sailom.webp",
+    "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Sailom+Bangpu,+55,+Thai+Ban,+Mueang+Samut+Prakan+District,+Samut+Prakan+10280/@13.6018292,100.6048672,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e2a74fea35dd8b:0xb7146605b32b9914!2m2!1d100.6128887!2d13.5383587?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D",
+    "website": "https://www.facebook.com/sailombangpu",
+    "description": "A famous dessert spot in Bang Pu, Samut Prakan, known for its banana cake and crepes, alongside a well-known restaurant."
   },
   {
     "id": 38,
