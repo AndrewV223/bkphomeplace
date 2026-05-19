@@ -23,6 +23,13 @@ body {
 }
 
 /* Navigation Bar */
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+  text-align: center;
+}
 .navbar {
   background-color: var(--primary-color) !important;
   padding: 1rem 0;
