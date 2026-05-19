@@ -255,7 +255,7 @@ body {
   font-size: 16px;
   /*min-width: 300px;*/
   /*flex-direction: column;*/
-
+}
 /* Footer */
 .footer {
   background-color: var(--primary-color);
