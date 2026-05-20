@@ -1,10 +1,10 @@
 /* Core Styles */
 :root {
-  --primary-color: #2f4f28;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --text-dark: #2c3e50;
-  --text-light: #ecf0f1;
+  --primary-color: #2f4f28;      /* Changed from #2c3e50 dark blue to olive green */
+  --secondary-color: #3498db;   /* almost royal blue Btn color */
+  --accent-color: #e74c3c;     /* orange Red */
+  --text-dark: #2c3e50;       /* the main color is like dark blue more toward the greyblack side */
+  --text-light: #ecf0f1;     /* grey */
   --transition-speed: 0.3s;
 }
 
@@ -18,7 +18,7 @@ body {
   font-family: 'Roboto', 'Noto Sans Thai', sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
-  background-color: #f8f9fa;
+  background-color: #f8f9fa;   /* on the blue tweak it to the left top corner became Grey */
   overflow-x: hidden;
 }
 
@@ -77,7 +77,7 @@ body {
 
 .hero .carousel-item {
   height: 70vh;
-  background: #2f4f28;
+  background: #2f4f28;   /* Changed from #000 black to olive green */
 }
 
 .hero .carousel-item img {
@@ -266,7 +266,7 @@ body {
 }
 /* Footer */
 .footer {
-  background-color: var(--primary-color);
+  background-color: (--primary-color);
   color: var(--text-light);
   padding: 3rem 0;
   margin-top: auto;
