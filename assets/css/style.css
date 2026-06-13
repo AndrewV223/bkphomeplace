@@ -21,7 +21,17 @@ body {
   background-color: #f8f9fa;   /* on the blue tweak it to the left top corner became Grey */
   overflow-x: hidden;
 }
+.btn-mourning {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
 
+.btn-mourning:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
 /* Navigation Bar */
 .navbar-nav {
   width: 100%;
