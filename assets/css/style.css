@@ -1,7 +1,7 @@
 /* Core Styles */
 :root {
-  --primary-color: #000000;      /* Changed from #2c3e50 dark blue to light green --Mourning from green to black Green #336600*/
-  --secondary-color: #000000;   /* almost royal blue Btn color #3498db */
+  --primary-color: #336600;      /* Changed from #2c3e50 dark blue to light green --Mourning from green to black Green #336600*/
+  --secondary-color: #3498db;   /* almost royal blue Btn color #3498db */
   --accent-color: #e74c3c;     /* orange Red */
   --text-dark: #2c3e50;       /* the main color is like dark blue more toward the greyblack side */
   --text-light: #ecf0f1;     /* grey */
@@ -21,17 +21,7 @@ body {
   background-color: #f8f9fa;   /* on the blue tweak it to the left top corner became Grey */
   overflow-x: hidden;
 }
-.btn-mourning {
-    background-color: #000;
-    border-color: #000;
-    color: #fff;
-}
 
-.btn-mourning:hover {
-    background-color: #333;
-    border-color: #333;
-    color: #fff;
-}
 /* Navigation Bar */
 .navbar-nav {
   width: 100%;
