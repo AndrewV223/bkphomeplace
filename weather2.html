@@ -401,26 +401,29 @@
     return localTime.replace("T", " ") + " local time";
   }
 
-  function getForecastGrid() {
-    const bounds = weatherMap.getBounds();
-    const south = bounds.getSouth();
-    const north = bounds.getNorth();
-    const west = bounds.getWest();
-    const east = bounds.getEast();
-    const rows = 7;
-    const columns = 7;
-    const points = [];
+  
+function getForecastGrid() {
+  const bounds = weatherMap.getBounds();
+  const south = bounds.getSouth();
+  const north = bounds.getNorth();
+  const west = bounds.getWest();
+  const east = bounds.getEast();
 
-    for (let row = 0; row < rows; row++) {
-      for (let col = 0; col < columns; col++) {
-        points.push({
-          latitude: south + (north - south) * row / (rows - 1),
-          longitude: west + (east - west) * col / (columns - 1)
-        });
-      }
+  const rows = 9;
+  const columns = 9;
+  const points = [];
+
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < columns; col++) {
+      points.push({
+        latitude: south + (north - south) * row / (rows - 1),
+        longitude: west + (east - west) * col / (columns - 1)
+      });
     }
-    return points;
   }
+
+  return points;
+}
 
   function scheduleFutureRainForecast() {
     if (!weatherMap || !$("weather-content") || $("weather-content").classList.contains("d-none")) return;
