@@ -374,21 +374,47 @@
     return Date.UTC(year, month - 1, day, hour, minute || 0) - utcOffsetSeconds * 1000;
   }
 
-  function getForecastIndex(hourly, hoursAhead, utcOffsetSeconds = 0) {
-    const target = Date.now() + hoursAhead * 60 * 60 * 1000;
-    let bestIndex = 0;
-    let bestDifference = Infinity;
+  //function getForecastIndex(hourly, hoursAhead, utcOffsetSeconds = 0) {
+    //const target = Date.now() + hoursAhead * 60 * 60 * 1000;
+   // let bestIndex = 0;
+  //  let bestDifference = Infinity;
 
-    hourly.time.forEach((time, index) => {
-      const difference = forecastTimeEpoch(time, utcOffsetSeconds) - target;
-      if (difference >= 0 && difference < bestDifference) {
-        bestDifference = difference;
-        bestIndex = index;
-      }
-    });
-    return bestIndex;
+    //hourly.time.forEach((time, index) => {
+      //const difference = forecastTimeEpoch(time, utcOffsetSeconds) - target;
+      //if (difference >= 0 && difference < bestDifference) {
+        //bestDifference = difference;
+        //bestIndex = index;
+      //}
+    //});
+    //return bestIndex;
+  //}
+
+function getForecastIndex(hourly, hoursAhead, utcOffsetSeconds = 0) {
+  if (!hourly || !hourly.time || hourly.time.length === 0) {
+    return -1;
   }
 
+  const target = Date.now() + hoursAhead * 60 * 60 * 1000;
+  let bestIndex = -1;
+  let bestDifference = Infinity;
+
+  hourly.time.forEach((time, index) => {
+    const forecastEpoch = forecastTimeEpoch(time, utcOffsetSeconds);
+    const difference = Math.abs(forecastEpoch - target);
+
+    if (difference < bestDifference) {
+      bestDifference = difference;
+      bestIndex = index;
+    }
+  });
+
+  // Don't silently display the wrong hour if forecast data is missing.
+  if (bestDifference > 90 * 60 * 1000) {
+    return -1;
+  }
+
+  return bestIndex;
+}
   function rainfallColor(mm) {
     if (mm < 0.1) return null;
     if (mm < 1) return "#2878ff";
@@ -479,12 +505,22 @@ function getForecastGrid() {
     const latStepKm = (bounds.getNorth() - bounds.getSouth()) / 6 * 111.32;
     const midLat = (bounds.getNorth() + bounds.getSouth()) / 2 * Math.PI / 180;
     const lonStepKm = (bounds.getEast() - bounds.getWest()) / 6 * 111.32 * Math.max(0.15, Math.cos(midLat));
-    const radius = Math.max(1500, Math.min(45000, Math.max(latStepKm, lonStepKm) * 750));
+  const radius = Math.max(
+  1000,
+  Math.min(25000, Math.max(latStepKm, lonStepKm) * 500)
+);
     let rainyPoints = 0;
 
     futureRainPoints.forEach(point => {
-      const index = getForecastIndex(point.hourly, hoursAhead, point.utcOffsetSeconds);
-      const mm = Number(point.hourly.precipitation[index] || 0);
+     const index = getForecastIndex(
+  point.hourly,
+  hoursAhead,
+  point.utcOffsetSeconds
+);
+
+if (index < 0) return;
+
+const mm = Number(point.hourly.precipitation[index] || 0);
       const probability = point.hourly.precipitation_probability?.[index];
       const color = rainfallColor(mm);
       if (!color) return;
