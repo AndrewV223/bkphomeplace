@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple city weather dashboard powered by Open-Meteo.">
+  <title>Bangna Local Weather</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root { --ink:#17233b; --muted:#64748b; --sky:#eaf4ff; --line:#e5edf6; }
+    body { min-height:100vh; color:var(--ink); background:linear-gradient(145deg,#eaf4ff 0%,#f7faff 46%,#f3f6fb 100%); }
+    .app-shell { max-width:1050px; }
+    .brand-mark { display:inline-grid; place-items:center; width:42px;height:42px;border-radius:14px;background:#d7eaff;font-size:1.35rem; }
+    .panel { background:rgba(255,255,255,.92); border:1px solid rgba(226,235,246,.95); border-radius:24px; box-shadow:0 14px 40px rgba(32,65,110,.07); }
+    .muted { color:var(--muted); }
+    .hero { background:linear-gradient(135deg,#1c4e91,#2d79bb); color:#fff; overflow:hidden; position:relative; }
+    .hero:after { content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-70px;top:-105px;box-shadow:0 0 0 28px rgba(255,255,255,.04),0 0 0 58px rgba(255,255,255,.035); }
+    .hero-content { position:relative;z-index:1; }
+    .big-temp { font-size:clamp(3.8rem,9vw,6rem);font-weight:700;letter-spacing:-.07em;line-height:1; }
+    .weather-icon { font-size:3rem; }
+    .metric { background:#f7faff;border:1px solid var(--line);border-radius:17px;padding:16px;height:100%; }
+    .metric-value { font-size:1.25rem;font-weight:700; }
+    #weather-map { height:420px; width:100%; border-radius:16px; z-index:1; background:#e8f0f7; }
+    .map-legend { font-size:.85rem; }
+    .forecast-day { border:1px solid var(--line);border-radius:17px;padding:15px 10px;text-align:center;background:#fff;height:100%; }
+    .forecast-day .day-icon { font-size:1.8rem; }
+    .form-control { border-color:#dbe5f0;min-height:48px; }
+    .btn-primary { background:#245fa8;border-color:#245fa8; }
+    .btn-primary:hover { background:#194d8d;border-color:#194d8d; }
+    .small-label { font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700; }
+    footer a { color:#245fa8; }
+    @media(max-width:575px){ .panel{border-radius:19px}.hero{border-radius:19px!important}.forecast-day{padding:12px 5px}.forecast-day .day-icon{font-size:1.45rem} }
+  </style>
+</head>
+<body>
+  <main class="container app-shell py-4 py-md-5">
+    <header class="d-flex align-items-center gap-3 mb-4">
+      <div class="brand-mark">🌤️</div>
+      <div>
+        <h1 class="h4 fw-bold mb-0">BKP Homeplace Apartment</h1>
+        <div class="small muted">Your local weather, at a glance</div>
+      </div>
+      <div class="ms-auto small muted d-none d-sm-block">Powered by Open-Meteo</div>
+    </header>
+
+    <section class="panel p-3 p-md-4 mb-4">
+      <form id="search-form" class="row g-2 align-items-center">
+        <div class="col-12 col-md">
+          <label for="city-input" class="form-label fw-semibold mb-1">Choose a city</label>
+          <input id="city-input" class="form-control" value="Bangkok" placeholder="Try Bangkok, Tokyo, London..." autocomplete="off" required>
+        </div>
+        <div class="col-12 col-md-auto align-self-end">
+          <button id="search-button" class="btn btn-primary px-4 w-100" type="submit">Get weather</button>
+        </div>
+      </form>
+      <div class="small muted mt-2">Search a city to see current conditions, a 7-day forecast, and rain chances.</div>
+    </section>
+
+    <div id="status" class="alert alert-info d-none" role="status"></div>
+
+    <section id="weather-content" class="d-none">
+      <div class="panel hero p-4 p-md-5 mb-4">
+        <div class="hero-content">
+          <div class="d-flex flex-wrap justify-content-between gap-3">
+            <div>
+              <div class="small text-white-50 mb-1">CURRENT WEATHER</div>
+              <h2 id="place-name" class="h3 fw-bold mb-1">Bangkok</h2>
+              <div id="current-time" class="text-white-50 small"></div>
+            </div>
+            <div id="current-icon" class="weather-icon" aria-hidden="true">🌤️</div>
+          </div>
+          <div class="d-flex align-items-end flex-wrap gap-3 mt-4">
+            <div id="temperature" class="big-temp">--°</div>
+            <div class="pb-2">
+              <div id="condition" class="fs-5 fw-semibold">Loading...</div>
+              <div id="feels-like" class="text-white-50">Feels like --°C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3 mb-4">
+        <div class="col-6 col-lg-3"><div class="metric"><div class="small-label mb-2">Humidity</div><div id="humidity" class="metric-value">--%</div><div class="small muted">Relative humidity</div></div></div>
+        <div class="col-6 col-lg-3"><div class="metric"><div class="small-label mb-2">Wind</div><div id="wind" class="metric-value">-- km/h</div><div class="small muted">Wind speed</div></div></div>
+        <div class="col-6 col-lg-3"><div class="metric"><div class="small-label mb-2">Rain now</div><div id="rain-now" class="metric-value">-- mm</div><div class="small muted">Current precipitation</div></div></div>
+        <div class="col-6 col-lg-3"><div class="metric"><div class="small-label mb-2">Today's rain chance</div><div id="rain-chance" class="metric-value">--%</div><div class="small muted">Maximum forecast chance</div></div></div>
+      </div>
+
+      <section class="panel p-3 p-md-4 mb-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+          <div><div class="small-label">Radar & location</div><h2 class="h4 fw-bold mb-1">Rain and storm map</h2>
+            <div class="small muted">Radar echoes can show areas of rain near your selected city.</div></div>
+          <span id="radar-status" class="small muted">Loading radar...</span>
+        </div>
+        <div id="weather-map" role="application" aria-label="Interactive weather and rain radar map"></div>
+        
+<!-- Future rainfall forecast controls -->
+<div class="mt-4 p-3 rounded-4" style="background:#f2f7ff;">
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+    <div>
+      <div class="small-label">FORECAST MODEL</div>
+      <h3 class="h5 fw-bold mb-1">Future Rain Forecast</h3>
+    </div>
+    <span class="badge text-bg-primary">Next 5 hours</span>
+  </div>
+
+  <p class="small muted">
+    See where rain is forecast to fall. This is a weather-model
+    forecast, not future radar imagery.
+  </p>
+
+  <div class="d-flex justify-content-between align-items-center mb-1">
+    <label for="forecast-hour" class="form-label fw-semibold mb-0">
+      Forecast time
+    </label>
+    <strong id="forecast-hour-label">+5 hours</strong>
+  </div>
+
+  <input
+    type="range"
+    class="form-range"
+    id="forecast-hour"
+    min="0"
+    max="5"
+    step="1"
+    value="5"
+    aria-label="Select forecast time in hours"
+  >
+
+  <div class="d-flex justify-content-between small muted">
+    <span>Now</span>
+    <span>+1h</span>
+    <span>+2h</span>
+    <span>+3h</span>
+    <span>+4h</span>
+    <span>+5h</span>
+    
+  </div>
+
+  <div class="d-flex flex-wrap gap-3 mt-3 small">
+    <span><span style="color:#2878ff">●</span> Light rain</span>
+    <span><span style="color:#27ae60">●</span> Moderate</span>
+    <span><span style="color:#f1c40f">●</span> Heavy</span>
+    <span><span style="color:#e74c3c">●</span> Very heavy</span>
+  </div>
+
+  <div id="future-rain-status" class="small muted mt-3" role="status">
+    Waiting for forecast data...
+  </div>
+
+  <div id="future-rain-details"
+       class="small mt-2"
+       aria-live="polite">
+    Click a point on the map to inspect its forecast rainfall.
+  </div>
+</div>
+<!-- End future rainfall forecast controls -->
+        <div class="d-flex flex-wrap justify-content-between gap-2 mt-3 map-legend">
+          <span class="muted">🗺️ Drag to move · scroll to zoom · marker = selected city</span>
+          <a href="https://weather.tmd.go.th/" target="_blank" rel="noopener noreferrer">Thailand official radar ↗</a>
+        </div>
+        <div class="small muted mt-2">Observed radar tiles are supplied by RainViewer; forecast circles use Open-Meteo model data. The forecast layer samples locations across the visible map and is an estimate, not a precise storm track.</div>
+      </section>
+
+      <section class="panel p-3 p-md-4 mb-4">
+        <div class="d-flex justify-content-between align-items-end gap-2 mb-3">
+          <div><div class="small-label">Plan ahead</div><h2 class="h4 fw-bold mb-0">7-day forecast</h2></div>
+          <div class="small muted">High / low · Rain chance</div>
+        </div>
+        <div id="forecast" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-7 g-2"></div>
+      </section>
+    </section>
+
+    <footer class="text-center small muted pt-2 pb-4">
+      Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>.
+      Forecasts are estimates and may change.
+    </footer>
+  </main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const $ = (id) => document.getElementById(id);
+
+  let weatherMap = null;
+  let cityMarker = null;
+  let radarLayer = null;
+  let futureRainLayer = null;
+  let selectedForecastMarker = null;
+  let futureRainPoints = [];
+  let forecastRefreshTimer = null;
+  let forecastRequestNumber = 0;
+
+  const forecastSlider = $("forecast-hour");
+  const forecastHourLabel = $("forecast-hour-label");
+  const forecastStatus = $("future-rain-status");
+  const forecastDetails = $("future-rain-details");
+
+  function initializeMap(latitude, longitude, placeName) {
+    if (!weatherMap) {
+      weatherMap = L.map("weather-map").setView([latitude, longitude], 7);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(weatherMap);
+
+      cityMarker = L.marker([latitude, longitude]).addTo(weatherMap);
+      futureRainLayer = L.layerGroup().addTo(weatherMap);
+
+      weatherMap.on("moveend", scheduleFutureRainForecast);
+      weatherMap.on("click", inspectForecastAtLocation);
+      loadRainRadar();
+    } else {
+      weatherMap.setView([latitude, longitude], 7);
+      cityMarker.setLatLng([latitude, longitude]);
+    }
+
+    cityMarker.bindPopup(escapeHtml(placeName));
+    setTimeout(() => weatherMap.invalidateSize(), 100);
+  }
+
+  async function loadRainRadar() {
+    try {
+      const response = await fetch("https://api.rainviewer.com/public/weather-maps.json");
+      if (!response.ok) throw new Error("Radar service unavailable");
+      const radar = await response.json();
+      const frames = radar.radar && radar.radar.past;
+      if (!frames || !frames.length) throw new Error("No radar frames available");
+
+      const latest = frames[frames.length - 1];
+      if (radarLayer) weatherMap.removeLayer(radarLayer);
+      radarLayer = L.tileLayer(
+        "https://tilecache.rainviewer.com" + latest.path + "/256/{z}/{x}/{y}/2/1_1.png",
+        {
+          opacity: 0.62,
+          maxZoom: 12,
+          attribution: '&copy; <a href="https://www.rainviewer.com/">RainViewer</a>'
+        }
+      ).addTo(weatherMap);
+
+      $("radar-status").textContent = "Observed radar · latest frame " +
+        new Date(latest.time * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    } catch (err) {
+      $("radar-status").textContent = "Observed radar unavailable — try the official radar link.";
+    }
+  }
+
+  function showStatus(message, isError = false) {
+    const statusBox = $("status");
+    statusBox.textContent = message;
+    statusBox.className = "alert " + (isError ? "alert-danger" : "alert-info");
+    statusBox.classList.remove("d-none");
+  }
+
+  function clearStatus() {
+    $("status").classList.add("d-none");
+  }
+
+  function weatherInfo(code) {
+    if (code === 0) return ["Clear sky", "☀️"];
+    if ([1, 2].includes(code)) return ["Mainly clear / partly cloudy", "🌤️"];
+    if (code === 3) return ["Overcast", "☁️"];
+    if ([45, 48].includes(code)) return ["Fog", "🌫️"];
+    if ([51, 53, 55, 56, 57].includes(code)) return ["Drizzle", "🌦️"];
+    if ([61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return ["Rain", "🌧️"];
+    if ([71, 73, 75, 77, 85, 86].includes(code)) return ["Snow", "❄️"];
+    if ([95, 96, 99].includes(code)) return ["Thunderstorm", "⛈️"];
+    return ["Weather conditions", "🌡️"];
+  }
+
+  function dayName(dateString, index) {
+    if (index === 0) return "Today";
+    if (index === 1) return "Tomorrow";
+    return new Date(dateString + "T12:00:00").toLocaleDateString(undefined, { weekday: "short" });
+  }
+
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, ch => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[ch]));
+  }
+
+  async function loadWeather(city) {
+    const button = $("search-button");
+    const content = $("weather-content");
+    button.disabled = true;
+    button.textContent = "Loading...";
+    content.classList.add("d-none");
+    showStatus("Finding city and loading weather...");
+
+    try {
+      city = city.trim();
+      if (/^samut\s*prakarn$/i.test(city)) city = "Samut Prakan";
+
+      const geoUrl = "https://geocoding-api.open-meteo.com/v1/search?name=" +
+        encodeURIComponent(city) + "&count=10&language=en&format=json";
+      const geoResponse = await fetch(geoUrl);
+      if (!geoResponse.ok) throw new Error("City search failed. Please try again.");
+      const geo = await geoResponse.json();
+
+      if (!geo.results || geo.results.length === 0) {
+        throw new Error("We couldn't find that city. Try another city name, or include the country.");
+      }
+
+      // Prefer Thailand for ambiguous names only when the search itself is Thailand-oriented.
+      const thailandTerms = /bangkok|bang\s*na|bang\s*phli|samut\s*prakarn|pattaya|chiang\s*mai|phuket/i;
+      const place = thailandTerms.test(city)
+        ? (geo.results.find(p => p.country === "Thailand") || geo.results[0])
+        : geo.results[0];
+
+      const locationLabel = [place.name, place.admin1, place.country]
+        .filter((part, index, arr) => part && arr.indexOf(part) === index).join(", ");
+
+      const params = new URLSearchParams({
+        latitude: place.latitude,
+        longitude: place.longitude,
+        current: "temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,weather_code,wind_speed_10m",
+        daily: "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max",
+        forecast_days: "7",
+        timezone: "auto"
+      });
+
+      const weatherResponse = await fetch("https://api.open-meteo.com/v1/forecast?" + params);
+      if (!weatherResponse.ok) throw new Error("Weather data is temporarily unavailable.");
+      const data = await weatherResponse.json();
+      const c = data.current;
+      const d = data.daily;
+
+      const [condition, icon] = weatherInfo(c.weather_code);
+      $("place-name").textContent = locationLabel;
+      initializeMap(place.latitude, place.longitude, locationLabel);
+      $("current-time").textContent = "Local time: " + c.time.replace("T", " ");
+      $("current-icon").textContent = c.is_day ? icon : (c.weather_code === 0 ? "🌙" : icon);
+      $("temperature").textContent = Math.round(c.temperature_2m) + "°";
+      $("condition").textContent = condition;
+      $("feels-like").textContent = "Feels like " + Math.round(c.apparent_temperature) + "°C";
+      $("humidity").textContent = c.relative_humidity_2m + "%";
+      $("wind").textContent = Math.round(c.wind_speed_10m) + " km/h";
+      $("rain-now").textContent = c.precipitation + " mm";
+      $("rain-chance").textContent = (d.precipitation_probability_max[0] ?? "N/A") +
+        (d.precipitation_probability_max[0] == null ? "" : "%");
+
+      $("forecast").innerHTML = d.time.map((date, i) => {
+        const [desc, dayIcon] = weatherInfo(d.weather_code[i]);
+        const rain = d.precipitation_probability_max[i];
+        return `<div class="col"><div class="forecast-day">
+          <div class="fw-semibold small mb-2">${dayName(date, i)}</div>
+          <div class="day-icon mb-2" title="${escapeHtml(desc)}">${dayIcon}</div>
+          <div class="fw-bold">${Math.round(d.temperature_2m_max[i])}°</div>
+          <div class="muted small mb-2">${Math.round(d.temperature_2m_min[i])}°</div>
+          <div class="small ${rain != null && rain >= 50 ? "text-primary fw-semibold" : "muted"}">☔ ${rain == null ? "N/A" : rain + "%"}</div>
+        </div></div>`;
+      }).join("");
+
+      clearStatus();
+      content.classList.remove("d-none");
+      setTimeout(() => {
+        if (weatherMap) weatherMap.invalidateSize();
+        scheduleFutureRainForecast();
+      }, 150);
+    } catch (error) {
+      showStatus(error.message || "Something went wrong while loading the weather.", true);
+    } finally {
+      button.disabled = false;
+      button.textContent = "Get weather";
+    }
+  }
+
+  // Convert Open-Meteo's local wall-clock time to an epoch using that point's UTC offset.
+  function forecastTimeEpoch(localTime, utcOffsetSeconds = 0) {
+    const parts = localTime.split(/[-T:]/).map(Number);
+    const [year, month, day, hour, minute] = parts;
+    return Date.UTC(year, month - 1, day, hour, minute || 0) - utcOffsetSeconds * 1000;
+  }
+
+  function getForecastIndex(hourly, hoursAhead, utcOffsetSeconds = 0) {
+    const target = Date.now() + hoursAhead * 60 * 60 * 1000;
+    let bestIndex = 0;
+    let bestDifference = Infinity;
+
+    hourly.time.forEach((time, index) => {
+      const difference = forecastTimeEpoch(time, utcOffsetSeconds) - target;
+      if (difference >= 0 && difference < bestDifference) {
+        bestDifference = difference;
+        bestIndex = index;
+      }
+    });
+    return bestIndex;
+  }
+
+  function rainfallColor(mm) {
+    if (mm < 0.1) return null;
+    if (mm < 1) return "#2878ff";
+    if (mm < 3) return "#27ae60";
+    if (mm < 8) return "#f1c40f";
+    return "#e74c3c";
+  }
+
+  function formatForecastTime(localTime) {
+    return localTime.replace("T", " ") + " local time";
+  }
+
+  function getForecastGrid() {
+    const bounds = weatherMap.getBounds();
+    const south = bounds.getSouth();
+    const north = bounds.getNorth();
+    const west = bounds.getWest();
+    const east = bounds.getEast();
+    const rows = 7;
+    const columns = 7;
+    const points = [];
+
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < columns; col++) {
+        points.push({
+          latitude: south + (north - south) * row / (rows - 1),
+          longitude: west + (east - west) * col / (columns - 1)
+        });
+      }
+    }
+    return points;
+  }
+
+  function scheduleFutureRainForecast() {
+    if (!weatherMap || !$("weather-content") || $("weather-content").classList.contains("d-none")) return;
+    clearTimeout(forecastRefreshTimer);
+    forecastRefreshTimer = setTimeout(loadFutureRainForecast, 450);
+  }
+
+  async function loadFutureRainForecast() {
+    if (!weatherMap) return;
+    const requestNumber = ++forecastRequestNumber;
+    forecastStatus.textContent = "Loading Open-Meteo rainfall forecast for this map area...";
+
+    try {
+      const grid = getForecastGrid();
+      const params = new URLSearchParams({
+        latitude: grid.map(p => p.latitude.toFixed(4)).join(","),
+        longitude: grid.map(p => p.longitude.toFixed(4)).join(","),
+        hourly: "precipitation,precipitation_probability",
+        forecast_hours: "24",
+        timezone: "auto"
+      });
+
+      const response = await fetch("https://api.open-meteo.com/v1/forecast?" + params);
+      if (!response.ok) throw new Error("Forecast service returned HTTP " + response.status);
+      const result = await response.json();
+      if (requestNumber !== forecastRequestNumber) return;
+
+      const locations = Array.isArray(result) ? result : [result];
+      futureRainPoints = locations.map((data, index) => ({
+        latitude: grid[index].latitude,
+        longitude: grid[index].longitude,
+        utcOffsetSeconds: data.utc_offset_seconds || 0,
+        hourly: data.hourly
+      })).filter(point => point.hourly && point.hourly.time && point.hourly.time.length);
+
+      drawFutureRainForecast();
+    } catch (error) {
+      if (requestNumber !== forecastRequestNumber) return;
+      console.error("Future rainfall forecast error:", error);
+      forecastStatus.textContent = "Could not load the future forecast. Check your internet connection and try again.";
+    }
+  }
+
+  function drawFutureRainForecast() {
+    if (!weatherMap || !futureRainLayer) return;
+    const hoursAhead = Number(forecastSlider.value);
+    forecastHourLabel.textContent = hoursAhead === 0 ? "Current forecast hour" : "+" + hoursAhead + " hours";
+    futureRainLayer.clearLayers();
+
+    if (!futureRainPoints.length) return;
+
+    const bounds = weatherMap.getBounds();
+    const latStepKm = (bounds.getNorth() - bounds.getSouth()) / 6 * 111.32;
+    const midLat = (bounds.getNorth() + bounds.getSouth()) / 2 * Math.PI / 180;
+    const lonStepKm = (bounds.getEast() - bounds.getWest()) / 6 * 111.32 * Math.max(0.15, Math.cos(midLat));
+    const radius = Math.max(1500, Math.min(45000, Math.max(latStepKm, lonStepKm) * 750));
+    let rainyPoints = 0;
+
+    futureRainPoints.forEach(point => {
+      const index = getForecastIndex(point.hourly, hoursAhead, point.utcOffsetSeconds);
+      const mm = Number(point.hourly.precipitation[index] || 0);
+      const probability = point.hourly.precipitation_probability?.[index];
+      const color = rainfallColor(mm);
+      if (!color) return;
+      rainyPoints++;
+
+      L.circle([point.latitude, point.longitude], {
+        radius,
+        color,
+        fillColor: color,
+        fillOpacity: 0.36,
+        weight: 1,
+        opacity: 0.75
+      }).bindPopup(
+        "<strong>Forecast rainfall</strong><br>" +
+        "Valid: " + escapeHtml(formatForecastTime(point.hourly.time[index])) + "<br>" +
+        "Precipitation: " + mm.toFixed(1) + " mm/hour<br>" +
+        "Rain probability: " + (probability == null ? "Unavailable" : probability + "%") +
+        "<br><small>Open-Meteo model forecast, not observed radar.</small>"
+      ).addTo(futureRainLayer);
+    });
+
+    const selectedTime = futureRainPoints[0];
+    const selectedIndex = getForecastIndex(selectedTime.hourly, hoursAhead, selectedTime.utcOffsetSeconds);
+    const validTime = selectedTime.hourly.time[selectedIndex];
+    forecastStatus.textContent = rainyPoints
+      ? "Forecast layer · " + rainyPoints + " sample areas predict rain at " + formatForecastTime(validTime) + ". Colors show forecast rainfall, not radar observations."
+      : "No measurable rainfall is forecast at the sampled map points for " + formatForecastTime(validTime) + ". This does not guarantee dry weather between sample points.";
+  }
+
+  async function inspectForecastAtLocation(event) {
+    if (!weatherMap || !forecastDetails) return;
+    const lat = event.latlng.lat;
+    const lon = event.latlng.lng;
+    const hoursAhead = Number(forecastSlider.value);
+    forecastDetails.textContent = "Checking forecast at " + lat.toFixed(4) + ", " + lon.toFixed(4) + "...";
+
+    try {
+      const params = new URLSearchParams({
+        latitude: lat,
+        longitude: lon,
+        hourly: "precipitation,precipitation_probability",
+        forecast_hours: "24",
+        timezone: "auto"
+      });
+      const response = await fetch("https://api.open-meteo.com/v1/forecast?" + params);
+      if (!response.ok) throw new Error("Forecast request failed");
+      const data = await response.json();
+      const hourly = data.hourly;
+      const index = getForecastIndex(hourly, hoursAhead, data.utc_offset_seconds || 0);
+      const mm = Number(hourly.precipitation[index] || 0);
+      const probability = hourly.precipitation_probability?.[index];
+      const localTime = formatForecastTime(hourly.time[index]);
+
+      if (selectedForecastMarker) weatherMap.removeLayer(selectedForecastMarker);
+      selectedForecastMarker = L.marker([lat, lon]).addTo(weatherMap);
+      selectedForecastMarker.bindPopup(
+        "<strong>Future rainfall forecast</strong><br>" +
+        "Location: " + lat.toFixed(4) + ", " + lon.toFixed(4) + "<br>" +
+        "Valid: " + escapeHtml(localTime) + "<br>" +
+        "Precipitation: " + mm.toFixed(1) + " mm/hour<br>" +
+        "Rain probability: " + (probability == null ? "Unavailable" : probability + "%") +
+        "<br><small>Forecast model data, not observed radar.</small>"
+      ).openPopup();
+
+      forecastDetails.textContent = "Selected location (" + lat.toFixed(4) + ", " + lon.toFixed(4) + "): " +
+        mm.toFixed(1) + " mm/hour forecast precipitation; rain probability " +
+        (probability == null ? "unavailable" : probability + "%") + ". Valid " + localTime + ".";
+    } catch (error) {
+      console.error("Point forecast error:", error);
+      forecastDetails.textContent = "Unable to load forecast data for this point. Please try again.";
+    }
+  }
+
+  forecastSlider.addEventListener("input", drawFutureRainForecast);
+
+  $("search-form").addEventListener("submit", event => {
+    event.preventDefault();
+    const city = $("city-input").value.trim();
+    if (city) loadWeather(city);
+  });
+
+  loadWeather("Bangkok");
+</script>
+</body>
+</html>
