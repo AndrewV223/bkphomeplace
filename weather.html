@@ -94,6 +94,74 @@
           <span id="radar-status" class="small muted">Loading radar...</span>
         </div>
         <div id="weather-map" role="application" aria-label="Interactive weather and rain radar map"></div>
+        
+<!-- Future rainfall forecast controls -->
+<div class="mt-4 p-3 rounded-4" style="background:#f2f7ff;">
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+    <div>
+      <div class="small-label">FORECAST MODEL</div>
+      <h3 class="h5 fw-bold mb-1">Future Rain Forecast</h3>
+    </div>
+    <span class="badge text-bg-primary">Next 5 hours</span>
+  </div>
+
+  <p class="small muted">
+    See where rain is forecast to fall. This is a weather-model
+    forecast, not future radar imagery.
+  </p>
+
+  <div class="d-flex justify-content-between align-items-center mb-1">
+    <label for="forecast-hour" class="form-label fw-semibold mb-0">
+      Forecast time
+    </label>
+    <strong id="forecast-hour-label">+5 hours</strong>
+  </div>
+
+  <input
+    type="range"
+    class="form-range"
+    id="forecast-hour"
+    min="0"
+    max="5"
+    step="1"
+    value="5"
+    aria-label="Select forecast time in hours"
+  >
+
+  <div class="d-flex justify-content-between small muted">
+    <span>Now</span>
+    <span>+1h</span>
+    <span>+2h</span>
+    <span>+3h</span>
+    <span>+4h</span>
+    <span>+5h</span>
+    <span>+6h</span>
+    <span>+7h</span>
+    <span>+8h</span>
+    <span>+9h</span>
+    <span>+10h</span>
+    <span>+11h</span>
+    <span>+12h</span>
+  </div>
+
+  <div class="d-flex flex-wrap gap-3 mt-3 small">
+    <span><span style="color:#2878ff">●</span> Light rain</span>
+    <span><span style="color:#27ae60">●</span> Moderate</span>
+    <span><span style="color:#f1c40f">●</span> Heavy</span>
+    <span><span style="color:#e74c3c">●</span> Very heavy</span>
+  </div>
+
+  <div id="future-rain-status" class="small muted mt-3" role="status">
+    Waiting for forecast data...
+  </div>
+
+  <div id="future-rain-details"
+       class="small mt-2"
+       aria-live="polite">
+    Click a point on the map to inspect its forecast rainfall.
+  </div>
+</div>
+<!-- End future rainfall forecast controls -->
         <div class="d-flex flex-wrap justify-content-between gap-2 mt-3 map-legend">
           <span class="muted">🗺️ Drag to move · scroll to zoom · marker = selected city</span>
           <a href="https://weather.tmd.go.th/" target="_blank" rel="noopener noreferrer">Thailand official radar ↗</a>
