@@ -13,7 +13,7 @@
         "image":"assets/img/shopping/mega-bangna-1.jpg",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/The+Glass+Market+Bangna,+645+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+13+Bang+Na-Trat+Frontage+Rd,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/@13.6567185,100.6488331,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5f00662e4511:0xe41483a883777aec!2m2!1d100.6739778!2d13.6531869!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
         "website": "https://www.mega-bangna.com/",
-        "description": "Large shopping complex with international brands and entertainment."
+        "description": "A major shopping and lifestyle destination with international brands, diverse dining options, entertainment, and everyday conveniences."
       },
       {
         "id": 2,
@@ -28,7 +28,7 @@
         "image": "assets/img/shopping/ikea-2.jpg",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/The+Glass+Market+Bangna,+645+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+13+Bang+Na-Trat+Frontage+Rd,+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/@13.6567185,100.6488331,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5f00662e4511:0xe41483a883777aec!2m2!1d100.6739778!2d13.6531869!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
         "website":"https://www.ikea.com/th/en/stores/bangna/",
-        "description": "Furniture store with restaurant and Swedish designs."
+        "description": "Located at Mega Bangna. Furniture store with restaurant and Swedish designs."
       },
       {
         "id": 3,
@@ -88,7 +88,7 @@
         "image": "assets/img/shopping/Central.webp",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Central+Bangna,+587,+589+Bang+Na-Trat+Frontage+Rd,+Bang+Na+Nuea,+Bang+Na,+Bangkok+10260/@13.6677441,100.6225588,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5fe57d8c5b4f:0xe3edda3d25621172!2m2!1d100.6340123!2d13.6686802!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
         "website":"https://www.central.co.th/en/store/central-bangna",
-        "description": "A large shopping mall with a variety of stores and restaurants."
+        "description": "A popular shopping center offering retail stores, restaurants, supermarkets, and family-friendly activities."
       },
       {
         "id": 7,
@@ -103,7 +103,7 @@
         "image": "assets/img/shopping/seacon.webp",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+12+54+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan+10540/Seacon+Square+Srinagarindra,+55+Srinagarindra+Rd,+Nong+Bon,+Prawet,+Bangkok+10250/@13.6760747,100.6316962,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5fd3fd8e82df:0xecc3d0841afbf60c!2m2!1d100.6483001!2d13.6943348!3e0?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D",
         "website":"https://www.seaconsquare.com",
-        "description": "A large shopping mall with a variety of stores and restaurants."
+        "description": "One of Bangkok's major shopping complexes, featuring extensive shopping, dining, entertainment, and seasonal events."
       },
         {
         "id": 8,
@@ -117,7 +117,7 @@
          "image": "assets/img/shopping/Paradise-park.jpg",
             "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Paradise+Park,+61+Srinagarindra+Rd,+Nong+Bon,+Prawet,+Bangkok+10250,+Thailand/@13.6726453,100.631696,4201m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d6069352d5cb3:0x29b547d8479f06ea!2m2!1d100.647631!2d13.6875903!3e0?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D",
             "website": "https://www.paradisepark.co.th/",
-            "description": "Paradise Park"
+            "description": "A quieter shopping mall with a more mature crowd. One of its highlights is the excellent food court on the G Floor, offering plenty of delicious and affordable food choices."
         },
         
          {
@@ -132,7 +132,7 @@
         "image": "assets/img/leisure/Muang-boran.jpg",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/296,+The+Ancient+City,+1+Sukhumvit+Rd,+Bang+Pu+Mai,+Mueang+Samut+Prakan+District,+Samut+Prakan+10280,+Thailand/@13.601989,100.5636617,16809m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d587d0bf731eb:0x2e55b55dfe4082c7!2m2!1d100.6225741!2d13.5386026!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
         "website":"https://www.muangboranmuseum.com/en",
-        "description": "Thailand life-sized and scaled down replicas of prominent buildings and monuments."
+        "description": "Tourist Area Thailand life-sized and scaled down replicas of prominent buildings and monuments."
       },
          {
         "id": 10,
@@ -146,7 +146,7 @@
         "image": "assets/img/leisure/Chang-erawan.jpg",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Chang+Erawan,+Tambon+Pak+Nam,+Amphoe+Mueang+Samut+Prakan,+Chang+Wat+Samut+Prakan+10270,+Thailand/@13.6341342,100.5429163,16806m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x30e2a0e96d53a661:0x2dc31b06a7c87782!2m2!1d100.59011!2d13.62145!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
         "website":"https://www.muangboranmuseum.com/en/landmark/the-erawan-museum/",
-        "description": "3 massive headed elephant shrine"
+        "description": "Another Tourist area with 3 massive headed elephant shrine"
       },
         {
         "id": 11,
@@ -161,7 +161,7 @@
             "website": "https://www.bangkok.go.th/parksu/",
         "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan,+Thailand/Suan+Luang+Rama+IX,+Chaloem+Phrakiat+Ratchakan+Thi+9+Road,+%E0%B9%80%E0%B9%80%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%99+Prawet,+Bangkok,+Thailand/@13.6780135,100.6345627,4201m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d609431a959bb:0x181f483771e2d444!2m2!1d100.6641942!2d13.688319!3e0?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
         
-        "description": "Local Park Suang Luang Rama 9"
+        "description": "A beautiful and spacious public park popular with runners, joggers, and cyclists. In the evenings, the park comes alive with group aerobic dance sessions. A great place to exercise, get some fresh air, or simply relax outdoors. "
       },
         {
             "id": 45,
@@ -191,7 +191,7 @@
     "image": "assets/img/leisure/Bangpu.jpg",
     "map": "https://www.google.com/maps/dir/BKP+Homeplace+Apartment,+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E+%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%94+%E0%B8%81%E0%B8%A1.6+Bang+Kaeo,+Bang+Phli+District,+Samut+Prakan/Bang+Pu+Recreation+Center,+164+Sukhumvit+Rd,+Bang+Pu+Mai,+Mueang+Samut+Prakan+District,+Samut+Prakan+10280/@13.5894367,100.5790007,21337m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x311d5fb59901d265:0xd0472cca74faee68!2m2!1d100.6604875!2d13.6577056!1m5!1m1!1s0x311d5837aa3a2c21:0xe4ca91b86533299!2m2!1d100.6539698!2d13.513335?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D",
     "website": "https://www.tourismthailand.org/Attraction/Bang-Pu-Seaside-Resort",
-    "description": "Famous seaside pier for bird-watching and sunset views with local seafood restaurants and ocean breeze."
+    "description": "Bang Pu is a popular seaside destination known for its fresh seafood restaurants and beautiful coastal views. It's also a great place to see thousands of migrating seagulls, which visit the area from October through April. Visit in the late afternoon to enjoy delicious seafood, watch the seagulls flying over the water, and take in the beautiful sunset."
   },
   {
     "id": 13,
