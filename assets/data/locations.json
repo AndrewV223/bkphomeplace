@@ -3,7 +3,7 @@
       {
         "id": 1,
         "name": "Mega Bangna",
-        "category": "shopping",
+        "category": "Malls",
         "distance": "4.9 km",
         "travel_time": {
           "car": "10 min",
@@ -18,7 +18,7 @@
       {
         "id": 2,
         "name": "IKEA Bangna",
-        "category": "shopping",
+        "category": "Malls",
         "distance": "4.9 km",
         "travel_time": {
           "car": "10 min",
@@ -33,7 +33,7 @@
       {
         "id": 3,
         "name": "The Glass Market",
-        "category": "dining",
+        "category": "Local Market",
         "distance": "4.8 km",
         "travel_time": {
           "car": "8 min",
@@ -48,7 +48,7 @@
       {
         "id": 4,
         "name": "Parc Bangna",
-        "category": "dining",
+        "category": "Local Market",
         "distance": "5.0 km",
         "travel_time": {
           "car": "16 min",
@@ -78,7 +78,7 @@
       {
         "id": 6,
         "name": "Central Bangna",
-        "category": "shopping",
+        "category": "Malls",
         "distance": "5.7 km",
         "travel_time": {
           "car": "15 min",
@@ -93,7 +93,7 @@
       {
         "id": 7,
         "name": "Seacon Square",
-        "category": "shopping",
+        "category": "Malls",
         "distance": "6.6 km",
         "travel_time": {
           "car": "16 min",
@@ -108,7 +108,7 @@
         {
         "id": 8,
         "name": "Paradise Park",
-        "category":"shopping",
+        "category":"Malls",
         "distance": "6 km",
         "travel_time": {
             "car": "15 min",
@@ -123,7 +123,7 @@
          {
         "id": 9,
         "name": "Ancient City (Muang Boran)",
-        "category": "leisure",
+        "category": "Tourist Attractions",
         "distance": "18.2 km",
         "travel_time": {
           "car": "26 min",
@@ -137,7 +137,7 @@
          {
         "id": 10,
         "name": "Chang erawan shrine",
-        "category": "leisure",
+        "category": "Tourist Attractions",
         "distance": "12.2 km",
         "travel_time": {
           "car": "20 min",
@@ -151,7 +151,7 @@
         {
         "id": 11,
         "name": "Suang Luang Rama 9",
-        "category": "leisure",
+        "category": ["Tourist Attractions","Health"],
         "distance": "8.1 km",
         "travel_time": {
           "car": "23 min",
@@ -166,7 +166,7 @@
         {
             "id": 45,
             "name": "Market Village Suvarnabhumi",
-            "category": "shopping",
+            "category": "Malls",
             "distance": "9.3 km",
             "travel_time": {
                 "car": "15 min",
@@ -181,7 +181,7 @@
   {
     "id": 12,
     "name": "Bang Pu Recreation Center",
-    "category": "nature",
+    "category": "Tourist Attractions",
     "distance": "22.4 km",
     "travel_time": {
       "car": "35 min",
@@ -196,7 +196,7 @@
   {
     "id": 13,
     "name": "Pororo AquaPark Bangkok",
-    "category": "leisure",
+    "category": "Tourist Attractions",
     "distance": "4.5 km",
     "travel_time": {
       "car": "10 min",
@@ -211,7 +211,7 @@
   {
     "id": 14,
     "name": "Train Night Market Srinagarindra",
-    "category": "leisure",
+    "category": ["Local Market", "Tourist Attractions"],
     "distance": "12.3 km",
     "travel_time": {
       "car": "20 min",
@@ -226,7 +226,7 @@
   {
     "id": 15,
     "name": "Wat Sri Iam",
-    "category": "leisure",
+    "category": "Tourist Attractions",
     "distance": "5.2 km",
     "travel_time": {
       "car": "12 min",
@@ -241,7 +241,7 @@
   {
     "id": 16,
     "name": "Bang Kachao",
-    "category": "nature",
+    "category": ["Tourist Attractions", "Local Market"],
     "distance": "18.6 km",
     "travel_time": {
       "car": "30 min",
@@ -272,7 +272,7 @@
   {
     "id": 20,
     "name": "Bang Nam Phueng Floating Market",
-    "category": "market",
+    "category": "Local Market",
     "distance": "15 km",
     "travel_time": {
       "car": "25 min",
@@ -287,7 +287,7 @@
   {
     "id": 22,
     "name": "Taco Lake Wake Park",
-    "category": "leisure",
+    "category": "Tourist Attractions",
     "distance": "20 km",
     "travel_time": {
       "car": "30 min",
@@ -303,7 +303,7 @@
   {
     "id": 24,
     "name": "ICONSIAM",
-    "category": "shopping",
+    "category": ["Malls", "Tourist Attractions"],
     "distance": "≈ 27 km",
     "travel_time": { "car": "35 min", "bike": "40 min" },
     "image": "assets/img/shopping/Icon-siam2.jpg",
@@ -314,7 +314,7 @@
   {
     "id": 25,
     "name": "Siam Paragon",
-    "category": "shopping",
+    "category": ["Mall", "Tourist Attractions"],
     "distance": "≈ 22 km",
     "travel_time": { "car": "30 min", "bike": "35 min" },
     "image": "assets/img/shopping/siam-paragon2.jpg",
@@ -326,7 +326,7 @@
   {
     "id": 26,
     "name": "CentralWorld",
-    "category": "shopping",
+    "category": ["Mall", "Tourist Attractions"],
     "distance": "≈ 23 km",
     "travel_time": { "car": "32 min", "bike": "38 min" },
     "image": "assets/img/shopping/central-world.jpg",
@@ -337,7 +337,7 @@
   {
     "id": 27,
     "name": "EmQuartier",
-    "category": "shopping",
+    "category": ["Mall", "Tourist Attractions"],
     "distance": "≈ 19 km",
     "travel_time": { "car": "25 min", "bike": "30 min" },
     "image": "assets/img/shopping/emquartier.jpg",
@@ -348,7 +348,7 @@
   {
     "id": 28,
     "name": "Terminal 21 Asok",
-    "category": "shopping",
+    "category": ["Mall", "Tourist Attractions"],
     "distance": "≈ 22 km",
     "travel_time": { "car": "1 hr 45 min", "bike": "2 hr" },
     "image": "assets/img/shopping/terminal.jpg",
@@ -360,7 +360,7 @@
   {
     "id": 34,
     "name": "Central Village Luxury Outlet",
-    "category": "shopping",
+    "category": ["Mall", "Tourist Attractions"],
     "distance": "≈ 16 km",
     "travel_time": {
       "car": "20 min",
@@ -374,7 +374,7 @@
   {
     "id": 35,
     "name": "Imperial World Samrong",
-    "category": "shopping",
+    "category": "Malls",
     "distance": "≈ 9 km",
     "travel_time": {
       "car": "15 min",
@@ -402,7 +402,7 @@
   {
     "id": 38,
     "name": "Market Village Suvarnabhumi",
-    "category": "shopping",
+    "category": "Malls",
     "distance": "≈ 11 km",
     "travel_time": {
       "car": "17 min",
@@ -417,7 +417,7 @@
   {
     "id": 40,
     "name": "True Digital Park",
-    "category": "shopping/tech",
+    "category": "Malls",
     "distance": "≈ 8.3 km",
     "travel_time": {
       "car": "15 min",
